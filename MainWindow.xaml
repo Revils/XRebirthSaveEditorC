@@ -1,0 +1,1308 @@
+﻿<Window x:Class="XRebirthSaveEditorC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="XRebirthSaveEditorC v 0.5" Height="646" Width="1173" ResizeMode="CanResize" WindowStyle="SingleBorderWindow" Icon="/XRebirthSaveEditorC;component/x_rebirth.ico">
+    <Window.Resources>
+        <Style x:Key="shipCargoTrigger" TargetType="{x:Type GroupBox}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=.}"  Value="{x:Null}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="buttonGravidarNothingTrigger" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=Gravidar}"  Value="{x:Null}">
+                    <Setter Property="Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="Visibility" Value="Hidden"/>
+        </Style>
+        <Style x:Key="TextGravidarNothingTrigger" TargetType="{x:Type TextBlock}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=Gravidar}"  Value="{x:Null}">
+                    <Setter Property="Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="Visibility" Value="Hidden"/>
+        </Style>
+        <Style x:Key="addBoardingButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbBoarding, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addCombatButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbCombat, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addEngineeringButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbEngineering, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addNavigationButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbNavigation, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addLeadershipButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbLeadership, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addMoraleButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbMorale, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addScienceButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbScience, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addManagementButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbManagement, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addBoardingStationButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbBoardingStation, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addCombatStationButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbCombatStation, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addEngineeringStationButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbEngineeringStation, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addNavigationStationButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbNavigationStation, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addLeadershipStationButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbLeadershipStation, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addMoraleStationButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbMoraleStation, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addScienceStationButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbScienceStation, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+        <Style x:Key="addManagementStationButtonStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbManagementStation, Path=IsEnabled}"  Value="true">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="MinWidth" Value="20" />
+        </Style>
+
+        <DataTemplate x:Key="statsItemTemplate">
+            <TextBlock Style="{StaticResource textBlockStyle}" Text="{Binding Path=Attribute[id].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+        </DataTemplate>
+        <DataTemplate x:Key="modItemTemplate">
+            <TextBlock Style="{StaticResource textBlockStyle}" Text="{Binding Path=Attribute[name].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+        </DataTemplate>
+        <DataTemplate x:Key="playerShipsItemTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding Path=Image}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" MaxWidth="160" MaxHeight="90"/>
+                <TextBlock Style="{StaticResource textBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Left" Text="{Binding Path=Data.Attribute[name].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="playerStationsItemTemplate">
+            <TextBlock Style="{StaticResource textBlockStyle}" Text="{Binding Path=Data.Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+        </DataTemplate>
+        <DataTemplate x:Key="factionsItemTemplate">
+            <TextBlock Style="{StaticResource textBlockStyle}" Text="{Binding Path=Attribute[id].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+        </DataTemplate>
+        <DataTemplate x:Key="factionsItemDetailTemplate">
+            <TextBlock Style="{StaticResource textBlockStyle}" Text="{Binding Path=Attribute[faction].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+        </DataTemplate>
+        <DataTemplate x:Key="tradeItemTemplate">
+            <TextBlock Style="{StaticResource textBlockStyle}" Text="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+        </DataTemplate>
+        <DataTemplate x:Key="shipyardsItemTemplate">
+            <TextBlock Style="{StaticResource textBlockStyle}" Text="{Binding Path=Data.Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+        </DataTemplate>
+        <DataTemplate x:Key="shipyardShipsItemTemplate">
+            <TextBlock Style="{StaticResource textBlockStyle}" Text="{Binding Path=Data.Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+        </DataTemplate>
+        <DataTemplate x:Key="crewItemTemplate">
+            <TextBlock Style="{StaticResource textBlockStyle}" Text="{Binding Path=CrewMember.Attribute[name].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+        </DataTemplate>
+        <DataTemplate x:Key="shipDronesItemTemplate">
+            <TextBlock Style="{StaticResource textBlockStyle}" Text="{Binding Path=Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+        </DataTemplate>
+        <XmlDataProvider x:Name="comboBoxValues" x:Key="comboBoxValues" XPath="Context"/>
+    </Window.Resources>
+
+
+    <Grid Name="ParentGrid">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Load" Click="MenuItemLoad_Click"/>
+                <MenuItem Focusable="true" Name="SaveMenuItem" Header="Save" Click="MenuItemSave_Click" IsEnabled="false"/>
+            </MenuItem>
+            <MenuItem Header="Tools">
+                <MenuItem Name="ModMenuItem" Header="Remove Mod Relations" Click="MenuItemMod_Click" IsEnabled="false"/>
+            </MenuItem>
+        </Menu>
+
+        <TabControl Name="MainTabControl" IsEnabled="false" Grid.Row="1">
+            <TabItem Header="Info">
+                <StackPanel Margin="0,10,0,0">
+                    <GroupBox Header="Save" DataContext="{Binding Path=Data.Element[info].Element[save]}">
+                        <StackPanel HorizontalAlignment="left">
+                            <StackPanel Orientation="Horizontal">
+                                <Label Style="{StaticResource labelStyle}">Name:</Label>
+                                <TextBox Name="PlayerNameTextBox" Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[name].Value, FallbackValue='[not available]'}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Style="{StaticResource labelStyle}">Date:</Label>
+                                <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[date].Value, FallbackValue='[not available]', Converter={StaticResource DateValueConverter}}" />
+                            </StackPanel>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <GroupBox Header="Player" DataContext="{Binding Path=Data.Element[info].Element[player]}">
+                        <StackPanel >
+                            <StackPanel Orientation="Horizontal">
+                                <Label Style="{StaticResource labelStyle}">Name:</Label>
+                                <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[name].Value, FallbackValue='[not available]'}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Style="{StaticResource labelStyle}">Money:</Label>
+                                <TextBox x:Name="PlayerMoneyTextBox" Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[money].Value, FallbackValue='[not available]'}" />
+                                <Label Style="{StaticResource labelStyle}">Credits</Label>
+                            </StackPanel>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+            </TabItem>
+
+
+            <TabItem Header="Stats" DataContext="{Binding Path=Data.Element[stats].Elements[stat]}">
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <DockPanel Grid.Column="0" >
+                        <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                            <Label VerticalAlignment="Center" Foreground="White">Stats</Label>
+                        </Border>
+
+                        <ListBox x:Name="StatsListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource statsItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                        </ListBox>
+                    </DockPanel>
+
+                    <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Style="{StaticResource labelStyle}">Id:</Label>
+                            <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[id].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Style="{StaticResource labelStyle}">Value:</Label>
+                            <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[value].Value, FallbackValue='[not available]'}"  />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+
+
+            <TabItem Header="Mods" DataContext="{Binding Path=Data.Element[info].Element[patches].Elements[patch]}">
+                <Grid Margin="0,10,0,0">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                        <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                            <Label VerticalAlignment="Center" Foreground="White">Mods</Label>
+                        </Border>
+
+                        <ListBox x:Name="ModListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource modItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                        </ListBox>
+                    </DockPanel>
+
+                    <StackPanel Grid.Column="1" Margin="0,0,5,0">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Label Style="{StaticResource labelStyle}">Id:</Label>
+                            <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[extension].Value, FallbackValue='[not available]'}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Style="{StaticResource labelStyle}">Version:</Label>
+                            <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[version].Value, FallbackValue='[not available]'}"  />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Style="{StaticResource labelStyle}">Name:</Label>
+                            <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[name].Value, FallbackValue='[not available]'}" />
+                        </StackPanel>
+                        <Button Content="Remove Mod" Height="30" Width="100" HorizontalAlignment="Right" Click="ButtonRemoveMod_Click"/>
+                    </StackPanel>
+
+                </Grid>
+            </TabItem>
+
+
+
+            <TabItem Header="Reputation" DataContext="{Binding Path=Data.Element[universe].Element[factions].Elements[faction]}">
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                        <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                            <Label VerticalAlignment="Center" Foreground="White">From Faction</Label>
+                        </Border>
+                        <ListBox x:Name="FactionListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource factionsItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                        </ListBox>
+                    </DockPanel>
+                    <Grid Grid.Column="1" Margin="0,0,5,0" DataContext="{Binding Path=Element[relations].Descendants}" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <DockPanel Grid.Column="0">
+                            <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                                <Label VerticalAlignment="Center" Foreground="White">To Faction</Label>
+                            </Border>
+                            <ListBox   x:Name="FactionListDetailBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource factionsItemDetailTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                            </ListBox>
+                        </DockPanel>
+                        <StackPanel Grid.Column="1" Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal">
+                                <Label Style="{StaticResource labelStyle}">Faction:</Label>
+                                <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[faction].Value, FallbackValue='[not available]'}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Style="{StaticResource labelStyle}">Relation:</Label>
+                                <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[relation].Value, FallbackValue='[not available]'}" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Player Owned Ships" DataContext="{Binding Path=PlayerShips}">
+                <Grid Margin="0,10,0,0">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                        <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                            <Label VerticalAlignment="Center" Foreground="White">Ship</Label>
+                        </Border>
+
+                        <ListBox x:Name="PlayerShipListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource playerShipsItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                        </ListBox>
+                    </DockPanel>
+                    <TabControl Grid.Column="1">
+                        <TabItem Header="Info" >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="3*" />
+                                    <ColumnDefinition Width="1*" />
+                                </Grid.ColumnDefinitions>
+
+
+                                <StackPanel Grid.Column="0"  >
+
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Name:</Label>
+                                        <TextBox Name="tbShipName" Style="{StaticResource textboxStyle}" Text="{Binding Path=Data.Attribute[name].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Class:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Data.Attribute[class].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Macro:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Data.Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">State:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}"  Text="{Binding Path=Data.Attribute[state].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                    </StackPanel>
+
+                                    <Button Content="Delete Ship" Click="ButtonDeleteShip_Click" />
+                                    <Button Content="Repair all Components" Click="ButtonRepairShip_Click" />
+                                    <Button Content="Add Gravidar" Click="ButtonAddGravidarShip_Click" Style="{StaticResource buttonGravidarNothingTrigger}"/>
+                                    <TextBlock Style="{StaticResource TextGravidarNothingTrigger}">(If a ship has no Gravidar, it cannot target enemy ships)</TextBlock>
+
+
+                                </StackPanel>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Drones" DataContext="{Binding Path=Drones}">
+
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="3*" />
+                                </Grid.ColumnDefinitions>
+                                <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                                    <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                                        <Label VerticalAlignment="Center" Foreground="White">Drones</Label>
+                                    </Border>
+                                    <ListBox Grid.Column="0" x:Name="ShipDronesListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource shipDronesItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                    </ListBox>
+                                </DockPanel>
+                                <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Drone:</Label>
+                                        <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Drone}"  SelectedValue="{Binding Path=Attribute[macro].Value, FallbackValue='[not available]'}" />
+                                        <!--<TextBox Style="{StaticResource textboxStyle}" Text="{Binding XPath=@ware, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />-->
+
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <Button Content="Add Drone" Click="ButtonAddDroneShip_Click" />
+                                    <Button Content="Remove Drone" Click="ButtonRemoveDroneShip_Click" />
+                                </StackPanel>
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Crew" DataContext="{Binding Path=Crew}" >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="170*" />
+                                    <ColumnDefinition Width="30*"/>
+                                    <ColumnDefinition Width="299*" />
+                                </Grid.ColumnDefinitions>
+                                <DockPanel Grid.Column="0" Margin="5,0,0,0" Grid.ColumnSpan="2">
+                                    <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                                        <Label VerticalAlignment="Center" Foreground="White">Crew</Label>
+                                    </Border>
+                                    <ListBox Grid.Column="0" x:Name="ShipCrewListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource crewItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                    </ListBox>
+                                </DockPanel>
+                                <StackPanel Grid.Column="2" Margin="0,0,5,0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Name:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=CrewMember.Attribute[name].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" >
+                                        <Label Style="{StaticResource labelStyle}">Type:</Label>
+                                        <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//CrewType}" SelectedValue="{Binding Path=CrewMember.Element[entity].Attribute[type].Value, FallbackValue='[not available]'}" />
+                                        <!--<TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=CrewMember.Element[entity].Attribute[type].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />-->
+                                    </StackPanel>
+                                    <GroupBox Header="Skills">
+                                        <StackPanel Orientation="Vertical">
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Boarding:</Label>
+                                                <ComboBox Name="cbBoarding" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding  Path=Boarding.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addBoardingButtonStyle}" Click="ButtonAddBoarding_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Combat:</Label>
+                                                <ComboBox Name="cbCombat" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Combat.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addCombatButtonStyle}" Click="ButtonAddCombat_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Engineering:</Label>
+                                                <ComboBox Name="cbEngineering" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Engineering.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addEngineeringButtonStyle}" Click="ButtonAddEngineering_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Navigation:</Label>
+                                                <ComboBox Name="cbNavigation" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Navigation.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addNavigationButtonStyle}" Click="ButtonAddNavigation_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Leadership:</Label>
+                                                <ComboBox Name="cbLeadership" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Leadership.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addLeadershipButtonStyle}" Click="ButtonAddLeadership_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Morale:</Label>
+                                                <ComboBox Name="cbMorale" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Morale.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addMoraleButtonStyle}" Click="ButtonAddMorale_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Science:</Label>
+                                                <ComboBox Name="cbScience" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Science.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addScienceButtonStyle}" Click="ButtonAddScience_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Management:</Label>
+                                                <ComboBox Name="cbManagement" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Management.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addManagementButtonStyle}" Click="ButtonAddManagement_Click">Enable</Button>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </GroupBox>
+                                </StackPanel>
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Cargo" >
+                            <UniformGrid Columns="1">
+
+                                <GroupBox Header="Fuel" DataContext="{Binding Path=FuelCargo}" Style="{StaticResource shipCargoTrigger}">
+
+
+                                    <Grid x:Name="FuelCargoGrid" DataContext="{Binding Path=Element[cargo].Element[summary].Elements[ware]}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2*" />
+                                            <ColumnDefinition Width="3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0" Margin="5,0,0,0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="3*" />
+                                                <RowDefinition Height="25" />
+                                            </Grid.RowDefinitions>
+                                            <ListBox Grid.Column="0" x:Name="FuelCargoListBox" Margin="0,0,0,0" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                            </ListBox>
+                                            <UniformGrid Grid.Row="1" Rows="1">
+                                                <Button Content="Remove"   Click="ButtonRemoveFuelCargo_Click" />
+                                                <Button Content="Add New"   Click="ButtonAddFuelCargo_Click"/>
+                                            </UniformGrid>
+                                        </Grid>
+                                        <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Ware:</Label>
+
+                                                <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Fuel/Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+
+                                                <!--<TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />-->
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                                <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                            </StackPanel>
+                                        </StackPanel>
+
+                                    </Grid>
+                                </GroupBox>
+                                <GroupBox Header="Universal" DataContext="{Binding Path=UniversalCargo}" Style="{StaticResource shipCargoTrigger}">
+
+
+                                    <Grid x:Name="UniversalCargoGrid" DataContext="{Binding Path=Element[cargo].Element[summary].Elements[ware]}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2*" />
+                                            <ColumnDefinition Width="3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0" Margin="5,0,0,0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="3*" />
+                                                <RowDefinition Height="25" />
+                                            </Grid.RowDefinitions>
+                                            <ListBox Grid.Column="0" x:Name="UniversalCargoListBox" Margin="0,0,0,0" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                            </ListBox>
+                                            <UniformGrid Grid.Row="1" Rows="1">
+                                                <Button Content="Remove"   Click="ButtonRemoveUniversalCargo_Click"/>
+                                                <Button Content="Add New"  Click="ButtonAddUniversalCargo_Click"/>
+                                            </UniformGrid>
+                                        </Grid>
+                                        <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Ware:</Label>
+
+                                                <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+
+                                                <!--<TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />-->
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                                <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                            </StackPanel>
+                                        </StackPanel>
+
+                                    </Grid>
+                                </GroupBox>
+                                <GroupBox Header="Bulk" DataContext="{Binding Path=BulkCargo}" Style="{StaticResource shipCargoTrigger}">
+
+
+                                    <Grid x:Name="BulkCargoGrid" DataContext="{Binding Path=Element[cargo].Element[summary].Elements[ware]}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2*" />
+                                            <ColumnDefinition Width="3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0" Margin="5,0,0,0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="3*" />
+                                                <RowDefinition Height="25" />
+                                            </Grid.RowDefinitions>
+                                            <ListBox Grid.Column="0" x:Name="BulkCargoListBox" Margin="0,0,0,0" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                            </ListBox>
+                                            <UniformGrid Grid.Row="1" Rows="1">
+                                                <Button Content="Remove"   Click="ButtonRemoveBulkCargo_Click"/>
+                                                <Button Content="Add New"  Click="ButtonAddBulkCargo_Click"/>
+                                            </UniformGrid>
+                                        </Grid>
+                                        <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Ware:</Label>
+
+                                                <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Bulk/Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+
+                                                <!--<TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />-->
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                                <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                            </StackPanel>
+                                        </StackPanel>
+
+                                    </Grid>
+                                </GroupBox>
+                                <GroupBox Header="Container" DataContext="{Binding Path=ContainerCargo}" Style="{StaticResource shipCargoTrigger}">
+
+
+                                    <Grid x:Name="ContainerCargoGrid" DataContext="{Binding Path=Element[cargo].Element[summary].Elements[ware]}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2*" />
+                                            <ColumnDefinition Width="3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0" Margin="5,0,0,0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="3*" />
+                                                <RowDefinition Height="25" />
+                                            </Grid.RowDefinitions>
+                                            <ListBox Grid.Column="0" x:Name="ContainerCargoListBox" Margin="0,0,0,0" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                            </ListBox>
+                                            <UniformGrid Grid.Row="1" Rows="1">
+                                                <Button Content="Remove"   Click="ButtonRemoveContainerCargo_Click"/>
+                                                <Button Content="Add New"  Click="ButtonAddContainerCargo_Click"/>
+                                            </UniformGrid>
+                                        </Grid>
+                                        <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Ware:</Label>
+
+                                                <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Container/Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+
+                                                <!--<TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />-->
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                                <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                            </StackPanel>
+                                        </StackPanel>
+
+                                    </Grid>
+                                </GroupBox>
+                                <GroupBox Header="Energy" DataContext="{Binding Path=EnergyCargo}" Style="{StaticResource shipCargoTrigger}">
+
+
+                                    <Grid x:Name="EnergyCargoGrid" DataContext="{Binding Path=Element[cargo].Element[summary].Elements[ware]}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2*" />
+                                            <ColumnDefinition Width="3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0" Margin="5,0,0,0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="3*" />
+                                                <RowDefinition Height="25" />
+                                            </Grid.RowDefinitions>
+                                            <ListBox Grid.Column="0" x:Name="EnergyCargoListBox" Margin="0,0,0,0" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                            </ListBox>
+                                            <UniformGrid Grid.Row="1" Rows="1">
+                                                <Button Content="Remove"   Click="ButtonRemoveEnergyCargo_Click"/>
+                                                <Button Content="Add New"  Click="ButtonAddEnergyCargo_Click"/>
+                                            </UniformGrid>
+                                        </Grid>
+                                        <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Ware:</Label>
+
+                                                <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Energy/Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+
+                                                <!--<TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />-->
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                                <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                            </StackPanel>
+                                        </StackPanel>
+
+                                    </Grid>
+                                </GroupBox>
+                                <GroupBox Header="Liquid" DataContext="{Binding Path=LiquidCargo}" Style="{StaticResource shipCargoTrigger}">
+
+
+                                    <Grid x:Name="LiquidCargoGrid" DataContext="{Binding Path=Element[cargo].Element[summary].Elements[ware]}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2*" />
+                                            <ColumnDefinition Width="3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0" Margin="5,0,0,0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="3*" />
+                                                <RowDefinition Height="25" />
+                                            </Grid.RowDefinitions>
+                                            <ListBox Grid.Column="0" x:Name="LiquidCargoListBox" Margin="0,0,0,0" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                            </ListBox>
+                                            <UniformGrid Grid.Row="1" Rows="1">
+                                                <Button Content="Remove"   Click="ButtonRemoveLiquidCargo_Click"/>
+                                                <Button Content="Add New"  Click="ButtonAddLiquidCargo_Click"/>
+                                            </UniformGrid>
+                                        </Grid>
+                                        <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Ware:</Label>
+
+                                                <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Liquid/Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+
+                                                <!--<TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />-->
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                                <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                            </StackPanel>
+                                        </StackPanel>
+
+                                    </Grid>
+                                </GroupBox>
+                            </UniformGrid>
+                        </TabItem>
+                        <TabItem Header="TradeQueue" DataContext="{Binding Path=TradeQueue}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="3*" />
+                                </Grid.ColumnDefinitions>
+                                <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                                    <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                                        <Label VerticalAlignment="Center" Foreground="White">Ware</Label>
+                                    </Border>
+                                    <ListBox Grid.Column="0" x:Name="ShipTradeListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                    </ListBox>
+                                </DockPanel>
+                                <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Id:</Label>
+                                        <TextBox Name="TradeIdTextBox" Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[id].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Ware:</Label>
+                                        <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+                                        <!--<TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />-->
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Price:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[price].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <Button Content="Remove Trade" Height="30" Width="100" HorizontalAlignment="Right" Click="ButtonRemoveTrade_Click"/>
+                                </StackPanel>
+
+                            </Grid>
+
+                        </TabItem>
+                        <TabItem Header="ConstructionWares" DataContext="{Binding Path=ConstructionWares}">
+
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="3*" />
+                                </Grid.ColumnDefinitions>
+                                <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                                    <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                                        <Label VerticalAlignment="Center" Foreground="White">Ware</Label>
+                                    </Border>
+                                    <ListBox Grid.Column="0" x:Name="ShipConstructionWaresListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                    </ListBox>
+                                </DockPanel>
+                                <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Ware:</Label>
+                                        <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+                                        <!--<TextBox Style="{StaticResource textboxStyle}" Text="{Binding XPath=@ware, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />-->
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <Button Content="Zero" Height="Auto" Name="button1" Width="Auto" Click="ButtonFinishBuild_Click" />
+                                </StackPanel>
+
+                            </Grid>
+                        </TabItem>
+
+
+
+
+
+                    </TabControl>
+
+
+
+
+                </Grid>
+            </TabItem>
+
+
+            <TabItem Header="Player Owned Stations" DataContext="{Binding Path=Stations}">
+                <Grid Margin="0,10,0,0">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                        <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                            <Label VerticalAlignment="Center" Foreground="White">Station</Label>
+                        </Border>
+
+                        <ListBox x:Name="StationListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource playerStationsItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                        </ListBox>
+                    </DockPanel>
+                    <TabControl Grid.Column="1">
+                        <TabItem Header="Info">
+
+                            <StackPanel Grid.Column="1" Margin="0,0,5,0" DataContext="{Binding Path=Data}">
+
+                                <StackPanel Orientation="Horizontal" >
+                                    <Label Style="{StaticResource labelStyle}">Class:</Label>
+                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[class].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource labelStyle}">Macro:</Label>
+                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource labelStyle}">State:</Label>
+                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[state].Value, FallbackValue='[not available]'}" />
+                                </StackPanel>
+
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Crew" DataContext="{Binding Path=Crew}" >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="3*" />
+                                </Grid.ColumnDefinitions>
+                                <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                                    <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                                        <Label VerticalAlignment="Center" Foreground="White">Crew</Label>
+                                    </Border>
+                                    <ListBox Grid.Column="0" x:Name="StationCrewListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource crewItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                    </ListBox>
+                                </DockPanel>
+                                <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Name:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=CrewMember.Attribute[name].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" >
+                                        <Label Style="{StaticResource labelStyle}">Type:</Label>
+                                        <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//CrewType}" SelectedValue="{Binding Path=CrewMember.Element[entity].Attribute[type].Value, FallbackValue='[not available]'}" />
+                                        <!--<TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=CrewMember.Element[entity].Attribute[type].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />-->
+                                    </StackPanel>
+                                    <GroupBox Header="Skills">
+                                        <StackPanel Orientation="Vertical">
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Boarding:</Label>
+                                                <ComboBox Name="cbBoardingStation" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding  Path=Boarding.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addBoardingStationButtonStyle}" Click="ButtonAddBoardingStation_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Combat:</Label>
+                                                <ComboBox Name="cbCombatStation" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Combat.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addCombatStationButtonStyle}" Click="ButtonAddCombatStation_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Engineering:</Label>
+                                                <ComboBox Name="cbEngineeringStation" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Engineering.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addEngineeringStationButtonStyle}" Click="ButtonAddEngineeringStation_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Navigation:</Label>
+                                                <ComboBox Name="cbNavigationStation" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Navigation.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addNavigationStationButtonStyle}" Click="ButtonAddNavigationStation_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Leadership:</Label>
+                                                <ComboBox Name="cbLeadershipStation" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Leadership.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addLeadershipStationButtonStyle}" Click="ButtonAddLeadershipStation_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Morale:</Label>
+                                                <ComboBox Name="cbMoraleStation" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Morale.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addMoraleStationButtonStyle}" Click="ButtonAddMoraleStation_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Science:</Label>
+                                                <ComboBox Name="cbScienceStation" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Science.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addScienceStationButtonStyle}" Click="ButtonAddScienceStation_Click">Enable</Button>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Label Style="{StaticResource labelStyle}">Management:</Label>
+                                                <ComboBox Name="cbManagementStation" Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=CrewStats/CrewStat}" SelectedValue="{Binding Path=Management.Attribute[value].Value, FallbackValue='[not available]'}" />
+                                                <Button Style="{StaticResource addManagementStationButtonStyle}" Click="ButtonAddManagementStation_Click">Enable</Button>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </GroupBox>
+                                </StackPanel>
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Buys" DataContext="{Binding Path=Orders}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="3*" />
+                                </Grid.ColumnDefinitions>
+                                <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                                    <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                                        <Label VerticalAlignment="Center" Foreground="White">Ware</Label>
+                                    </Border>
+                                    <ListBox Grid.Column="0" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                    </ListBox>
+                                </DockPanel>
+                                <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Id:</Label>
+                                        <TextBox  Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[id].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Ware:</Label>
+                                        <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Price:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[price].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Sells" DataContext="{Binding Path=Offers}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="3*" />
+                                </Grid.ColumnDefinitions>
+                                <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                                    <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                                        <Label VerticalAlignment="Center" Foreground="White">Ware</Label>
+                                    </Border>
+                                    <ListBox Grid.Column="0" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                    </ListBox>
+                                </DockPanel>
+                                <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Id:</Label>
+                                        <TextBox  Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[id].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Ware:</Label>
+                                        <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Price:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[price].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+
+                </Grid>
+            </TabItem>
+
+
+
+            <TabItem Header="Shipyards" DataContext="{Binding Path=Shipyards}">
+                <Grid Margin="0,10,0,0">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                        <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                            <Label VerticalAlignment="Center" Foreground="White">Shipyard</Label>
+                        </Border>
+
+                        <ListBox x:Name="ShipyardListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource shipyardsItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                        </ListBox>
+                    </DockPanel>
+                    <TabControl Grid.Column="1">
+                        <TabItem Header="Info">
+
+                            <StackPanel Grid.Column="1" Margin="0,0,5,0" DataContext="{Binding Path=Data}">
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource labelStyle}">Class:</Label>
+                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[class].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource labelStyle}">Macro:</Label>
+                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource labelStyle}">State:</Label>
+                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[state].Value, FallbackValue='[not available]'}" />
+                                </StackPanel>
+
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Build Queue" DataContext="{Binding Path=ShipBuildQueue}">
+
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="3*" />
+                                </Grid.ColumnDefinitions>
+                                <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                                    <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                                        <Label VerticalAlignment="Center" Foreground="White">Ship</Label>
+                                    </Border>
+                                    <ListBox Grid.Column="0" x:Name="shipyardShipsListBox" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource shipyardShipsItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                    </ListBox>
+                                </DockPanel>
+                                <StackPanel Grid.Column="1" Margin="0,0,5,0" DataContext="{Binding Path=Data}">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Id:</Label>
+
+
+
+
+
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[id].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Name:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Owner:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[owner].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                    </StackPanel>
+                                    <Button Click="ButtonFinishShip_Click" DataContext="{Binding}">Finish Ship</Button>
+
+                                </StackPanel>
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Buys" DataContext="{Binding Path=Orders}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="3*" />
+                                </Grid.ColumnDefinitions>
+                                <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                                    <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                                        <Label VerticalAlignment="Center" Foreground="White">Ware</Label>
+                                    </Border>
+                                    <ListBox Grid.Column="0" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                    </ListBox>
+                                </DockPanel>
+                                <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Id:</Label>
+                                        <TextBox  Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[id].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Ware:</Label>
+                                        <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Price:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[price].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Sells" DataContext="{Binding Path=Offers}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="3*" />
+                                </Grid.ColumnDefinitions>
+                                <DockPanel Grid.Column="0" Margin="5,0,0,0">
+                                    <Border Height="30" Padding="0" Background="#4E87D4" DockPanel.Dock="Top">
+                                        <Label VerticalAlignment="Center" Foreground="White">Ware</Label>
+                                    </Border>
+                                    <ListBox Grid.Column="0" Margin="0,0,0,20" DockPanel.Dock="Left"
+                       ItemsSource="{Binding}"
+                       ItemTemplate="{StaticResource tradeItemTemplate}"
+                       IsSynchronizedWithCurrentItem="True"
+                       Visibility="Visible" SelectionMode="Single">
+                                    </ListBox>
+                                </DockPanel>
+                                <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Id:</Label>
+                                        <TextBox  Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[id].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Ware:</Label>
+                                        <ComboBox Style="{StaticResource comboBoxStyle}" ItemsSource="{Binding Source={StaticResource comboBoxValues}, XPath=//Ware}"  SelectedValue="{Binding Path=Attribute[ware].Value, FallbackValue='[not available]'}" />
+
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Price:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[price].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Style="{StaticResource labelStyle}">Amount:</Label>
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[amount].Value, FallbackValue='[not available]'}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                            </Grid>
+                        </TabItem>
+
+                    </TabControl>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

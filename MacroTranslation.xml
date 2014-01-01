@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entities>
+  <Entity macro="antimattercells" name="Antimatter Cells" />
+  <Entity macro="bioelectricneurongel" name="Bio-Electric Neuron Gel" />
+  <Entity macro="bioopticwiring" name="Bio-Optic Wiring" />
+  <Entity macro="bofu" name="BoFu" />
+  <Entity macro="chemicalcompounds" name="Chemical Compounds" />
+  <Entity macro="crystals" name="Crystals" />
+  <Entity macro="cutcrystals" name="Cut Crystals" />
+  <Entity macro="drp_assault" name="Assault URV" />
+  <Entity macro="drp_cargolifter" name="Cargolifter URV" />
+  <Entity macro="drp_construction" name="Construction URV" />
+  <Entity macro="drp_interceptor_mk1" name="Interceptor URV Mk1" />
+  <Entity macro="drp_interceptor_mk2" name="Interceptor URV Mk2" />
+  <Entity macro="drp_intrepid_mk1" name="Intrepid URV Mk1" />
+  <Entity macro="drp_intrepid_mk2" name="Intrepid URV Mk2" />
+  <Entity macro="drp_overrun_mk1" name="Overrun URV Mk1" />
+  <Entity macro="drp_overrun_mk2" name="Overrun URV Mk2" />
+  <Entity macro="drp_scoopcollector_mk1" name="Scoop Collector URV Mk1" />
+  <Entity macro="drp_scoopcollector_mk2" name="Scoop Collector URV Mk2" />
+  <Entity macro="drp_surfaceminer_mk1" name="Surface Miner URV Mk1" />
+  <Entity macro="drp_surfaceminer_mk2" name="Surface Miner URV Mk2" />
+  <Entity macro="dumbfiremissile" name="Newtonian V Crushers" />
+  <Entity macro="dumbfireturret" name="V Launcher" />
+  <Entity macro="emspectrometer" name="EM-Spectrometer" />
+  <Entity macro="energycells" name="Energy Cells" />
+  <Entity macro="foodrations" name="Food Rations" />
+  <Entity macro="fuelcells" name="Fuel Cells" />
+  <Entity macro="fusionreactor" name="Fusion Reactors" />
+  <Entity macro="guidedmissile" name="Sunstalker Missiles" />
+  <Entity macro="holtzmanfieldgenerator" name="Podkletnov Generators" />
+  <Entity macro="hydrogen" name="Hydrogen" />
+  <Entity macro="ice" name="Ice" />
+  <Entity macro="inv_albiontobacco" name="Albion Tobacco" />
+  <Entity macro="inv_albionvisa" name="Albion Visa" />
+  <Entity macro="inv_amphetaminesulfate" name="Amphetamine Sulphate" />
+  <Entity macro="inv_argondelicacypacks" name="Argon Delicacy Packs" />
+  <Entity macro="inv_augmentedsoil" name="Augmented Soil" />
+  <Entity macro="inv_blankfreightpapers" name="Blank Freight Papers" />
+  <Entity macro="inv_blankidcards" name="Blank ID Cards" />
+  <Entity macro="inv_calciteshells" name="Calcite Shells" />
+  <Entity macro="inv_cartographyunits" name="Cartography Units" />
+  <Entity macro="inv_chippeddiamonds" name="Chipped Diamonds" />
+  <Entity macro="inv_chocolatelacedrations" name="Chocolate Laced Rations" />
+  <Entity macro="inv_civilians" name="Civilians" />
+  <Entity macro="inv_delexianale" name="Delexian Ale" />
+  <Entity macro="inv_enginecomponents" name="Engine Components" />
+  <Entity macro="inv_entertainmentconsoles" name="Entertainment Consoles" />
+  <Entity macro="inv_goldnuggets" name="Gold Nuggets" />
+  <Entity macro="inv_gourmetfoodstuffs" name="Gourmet Foodstuffs" />
+  <Entity macro="inv_hackerchips" name="Hacker Chips" />
+  <Entity macro="inv_hazardouswaste" name="Hazardous Waste" />
+  <Entity macro="inv_jonkayeanswhiskey" name="Jon Kayeans Whiskey" />
+  <Entity macro="inv_jumpdrivecomponents" name="Jump Drive Components" />
+  <Entity macro="inv_lifesupportsystems" name="Life Support Systems" />
+  <Entity macro="inv_medicalequipment" name="Medical Equipment" />
+  <Entity macro="inv_microorganisms" name="Micro-Organisms" />
+  <Entity macro="inv_militarypersonnel" name="Military Personnel" />
+  <Entity macro="inv_mineralfertilizer" name="Mineral Fertiliser" />
+  <Entity macro="inv_miningequipment" name="Mining Equipment" />
+  <Entity macro="inv_neuronalstimulant" name="Neuronal Stimulant" />
+  <Entity macro="inv_omicronvisa" name="Omicron Visa" />
+  <Entity macro="inv_pesticide" name="Pesticide" />
+  <Entity macro="inv_plutoniumdioxide" name="Plutonium Dioxide" />
+  <Entity macro="inv_prisoners" name="Prisoners" />
+  <Entity macro="inv_psychedelicmushrooms" name="Psychedelic Mushrooms" />
+  <Entity macro="inv_radioactivewaste" name="Radioactive Waste" />
+  <Entity macro="inv_roughgemstones" name="Rough Gemstones" />
+  <Entity macro="inv_scrapmetal" name="Scrap Metal" />
+  <Entity macro="inv_shipwreckage" name="Ship Wreckage" />
+  <Entity macro="inv_silicateminerals" name="Silicate Minerals" />
+  <Entity macro="inv_smallarms" name="Small Arms" />
+  <Entity macro="inv_spaceflies" name="Spaceflies" />
+  <Entity macro="inv_spaceflyeggs" name="Spacefly Eggs" />
+  <Entity macro="inv_spacesuits" name="Space Suits" />
+  <Entity macro="inv_stasischambers" name="Stasis Chambers" />
+  <Entity macro="inv_teladianiumpanelling" name="Teladianium Panelling" />
+  <Entity macro="inv_terranhightechgoods" name="Terran High-Tech Goods" />
+  <Entity macro="inv_terranredwine" name="Terran Red Wine" />
+  <Entity macro="inv_unidentifiedartifacts" name="Unidentified Artefacts" />
+  <Entity macro="inv_weaponinterfacechips" name="Weapon Interface Chips" />
+  <Entity macro="inv_xenoncomponents" name="Xenon Components" />
+  <Entity macro="ioncells" name="Ion Cells" />
+  <Entity macro="ions" name="Ions" />
+  <Entity macro="laserturret" name="Plasma/JET LR Turret" />
+  <Entity macro="machinegunturret" name="HIT/MA Turret" />
+  <Entity macro="meat" name="Meat" />
+  <Entity macro="medicalsupplies" name="Medical Supplies" />
+  <Entity macro="microchips" name="Microchips" />
+  <Entity macro="narcotics" name="Narcotics" />
+  <Entity macro="nividium" name="Nividium" />
+  <Entity macro="nividiumgems" name="Nividium Cubes" />
+  <Entity macro="ore" name="Ore" />
+  <Entity macro="plankton" name="Plankton" />
+  <Entity macro="plasma" name="Plasma" />
+  <Entity macro="plasmacells" name="Plasma Cells" />
+  <Entity macro="plasmaflowregulator" name="Plasma Flow Regulators" />
+  <Entity macro="plasmapumps" name="Plasma Pumps" />
+  <Entity macro="plasmaturret" name="Plasma/MA Turret" />
+  <Entity macro="quantumtubes" name="Quantum Tubes" />
+  <Entity macro="refinedmetals" name="Refined Metals" />
+  <Entity macro="reinforcedmetalplating" name="Reinforced Metal Plating" />
+  <Entity macro="scanningarray" name="Scanning Array" />
+  <Entity macro="shieldgenerator" name="Force Field Projector" />
+  <Entity macro="shotgunturret" name="Hailstorm/MA Turret" />
+  <Entity macro="silicon" name="Silicon" />
+  <Entity macro="siliconwafers" name="Silicon Wafers" />
+  <Entity macro="soybeans" name="Soy Beans" />
+  <Entity macro="spacefuel" name="Spacefuel" />
+  <Entity macro="spaceweed" name="Spaceweed" />
+  <Entity macro="spe_ammo_dumbfiremissile" name="Newtonian V Crushers ammo" />
+  <Entity macro="spe_ammo_guidedmissile" name="Sunstalker Missiles ammo" />
+  <Entity macro="spe_ammo_swarmmissile" name="Astrobee Swarmkillers" />
+  <Entity macro="spe_ammo_torpedo" name="Novadrones" />
+  <Entity macro="spe_drone_demolition" name="Traitor ROV" />
+  <Entity macro="spe_drone_hacker" name="Trojan ROV" />
+  <Entity macro="spe_drone_interceptor" name="Assassin ROV" />
+  <Entity macro="spe_drone_scanner_mk1" name="Beholder ROV Mk1" />
+  <Entity macro="spe_drone_scanner_mk2" name="Beholder ROV Mk2" />
+  <Entity macro="spe_drone_scanner_mk3" name="Beholder ROV Mk3" />
+  <Entity macro="spe_drone_shieldboost" name="Shield Support URV" />
+  <Entity macro="spe_drone_shieldwall" name="Defence Grid URV" />
+  <Entity macro="spe_drop_mine" name="Tracker Mine" />
+  <Entity macro="spe_unit_marine_mk1" name="Recruit Marine" />
+  <Entity macro="spe_unit_marine_mk2" name="Veteran Marine" />
+  <Entity macro="spe_unit_marine_mk3" name="Elite Marine" />
+  <Entity macro="spices" name="Spices" />
+  <Entity macro="swarmmissile" name="Astrobee Swarmkillers 1" />
+  <Entity macro="swarmturret" name="Astrobee Launcher" />
+  <Entity macro="torpedo" name="Novadrones 1" />
+  <Entity macro="unknown" name="Unknown Ware" />
+  <Entity macro="upg_pla_engine_bal_mk1" name="Equalized Engine Mk1" />
+  <Entity macro="upg_pla_engine_bal_mk3" name="Equalized Engine Mk3" />
+  <Entity macro="upg_pla_engine_bal_mk4" name="Equalized Engine Mk4" />
+  <Entity macro="upg_pla_engine_bal_mk5" name="Equalized Engine Mk5" />
+  <Entity macro="upg_pla_engine_man_mk2" name="Sidewinder Engine Mk2" />
+  <Entity macro="upg_pla_engine_man_mk3" name="Sidewinder Engine Mk3" />
+  <Entity macro="upg_pla_engine_man_mk4" name="Sidewinder Engine Mk4" />
+  <Entity macro="upg_pla_engine_man_mk5" name="Sidewinder Engine Mk5" />
+  <Entity macro="upg_pla_engine_spe_mk2" name="Supercharged Engine Mk2" />
+  <Entity macro="upg_pla_engine_spe_mk3" name="Supercharged Engine Mk3" />
+  <Entity macro="upg_pla_engine_spe_mk4" name="Supercharged Engine Mk4" />
+  <Entity macro="upg_pla_engine_spe_mk5" name="Supercharged Engine Mk5" />
+  <Entity macro="upg_pla_scanner_mk1" name="Basic Scanner" />
+  <Entity macro="upg_pla_scanner_mk2" name="Advanced Scanner" />
+  <Entity macro="upg_pla_scanner_mk3" name="Police Scanner" />
+  <Entity macro="upg_pla_shield_bal_mk1" name="Steady Shield Mk1" />
+  <Entity macro="upg_pla_shield_bal_mk3" name="Steady Shield Mk3" />
+  <Entity macro="upg_pla_shield_bal_mk4" name="Steady Shield Mk4" />
+  <Entity macro="upg_pla_shield_bal_mk5" name="Steady Shield Mk5" />
+  <Entity macro="upg_pla_shield_cap_mk2" name="Behemoth Shield Mk2" />
+  <Entity macro="upg_pla_shield_cap_mk3" name="Behemoth Shield Mk3" />
+  <Entity macro="upg_pla_shield_cap_mk4" name="Behemoth Shield Mk4" />
+  <Entity macro="upg_pla_shield_cap_mk5" name="Behemoth Shield Mk5" />
+  <Entity macro="upg_pla_shield_rec_mk2" name="Dashing Shield Mk2" />
+  <Entity macro="upg_pla_shield_rec_mk3" name="Dashing Shield Mk3" />
+  <Entity macro="upg_pla_shield_rec_mk4" name="Dashing Shield Mk4" />
+  <Entity macro="upg_pla_shield_rec_mk5" name="Dashing Shield Mk5" />
+  <Entity macro="upg_pla_software_tc_mk1" name="Trading Computer" />
+  <Entity macro="upg_pla_weapon_ie_mk1" name="Pulsed Maser Mk1" />
+  <Entity macro="upg_pla_weapon_ie_mk2" name="Pulsed Maser Mk2" />
+  <Entity macro="upg_pla_weapon_mg_mk1" name="Particle Repeater Mk1" />
+  <Entity macro="upg_pla_weapon_mg_mk2" name="Particle Repeater Mk2" />
+  <Entity macro="upg_pla_weapon_ml_mk1" name="Mining Laser Mk1" />
+  <Entity macro="upg_pla_weapon_ml_mk2" name="Mining Laser Mk2" />
+  <Entity macro="upg_pla_weapon_pe_mk1" name="Plasma Cannon Mk1" />
+  <Entity macro="upg_pla_weapon_pe_mk2" name="Plasma Cannon Mk2" />
+  <Entity macro="upg_pla_weapon_sg_mk1" name="Inertial Hammer Mk1" />
+  <Entity macro="upg_pla_weapon_sg_mk2" name="Inertial Hammer Mk2" />
+  <Entity macro="warheads" name="Warhead Components" />
+  <Entity macro="water" name="Water" />
+  <Entity macro="wheat" name="Wheat" />
+  <Entity macro="plutarch" name="Plutarch Mining Corporation" />
+  <Entity macro="heartofalbion" name="Heart of Albion" />
+  <Entity macro="beryll" name="Beryll" />
+  <Entity macro="leddaindustrial" name="Ledda Industrial" />
+  <Entity macro="wholesomefoods" name="Wholesome Foods" />
+  <Entity macro="nolimits" name="No Limits" />
+  <Entity macro="albionenergy" name="Albion Energy Subsidiary" />
+  <Entity macro="reivers" name="Reivers" />
+  <Entity macro="argongovernment" name="Argon Government" />
+  <Entity macro="jonferson" name="Jonferson Space Systems" />
+  <Entity macro="aquarius" name="Aquarius Corporation" />
+  <Entity macro="chow" name="CHOW" />
+  <Entity macro="frantonpharma" name="Franton Pharma" />
+  <Entity macro="xenon" name="Xenon" />
+  <Entity macro="familyryak" name="Family Ryak" />
+  <Entity macro="canteran" name="Republic of Cantera" />
+  <Entity macro="sonraenergy" name="Sonra Energy" />
+  <Entity macro="sovereignsyndicate" name="Sovereign Syndicate" />
+  <Entity macro="hereticvanguards" name="Heretic Vanguards" />
+  <Entity macro="time_total" name="Total time" />
+  <Entity macro="time_playership" name="Time spent on Albion Skunk" />
+  <Entity macro="time_boosting" name="Time spent boosting" />
+  <Entity macro="time_local_highways" name="Flying time in local highways" />
+  <Entity macro="time_superhighways" name="Flying time in superhighways" />
+  <Entity macro="time_remote" name="Remote-control flying time" />
+  <Entity macro="time_platforms" name="Time spent on landing platforms" />
+  <Entity macro="distance_space" name="Distance travelled in space" />
+  <Entity macro="distance_local_highways" name="Distance travelled in local highways" />
+  <Entity macro="distance_superhighways" name="Distance travelled in superhighways" />
+  <Entity macro="distance_remote" name="Distance travelled in remote-controlled object" />
+  <Entity macro="distance_platforms" name="Distance walked on landing platforms" />
+  <Entity macro="zones_discovered" name="Zones discovered" />
+  <Entity macro="sectors_discovered" name="Sectors discovered" />
+  <Entity macro="clusters_discovered" name="Systems discovered" />
+  <Entity macro="platforms_visited" name="Landing platforms visited" />
+  <Entity macro="max_faction_relation" name="Highest reputation with any faction" />
+  <Entity macro="money_player" name="Account(money)" />
+  <Entity macro="time_mode_collect_cargo" name="Time spent in cargo collect mode" />
+  <Entity macro="time_mode_collect_ore" name="Mining mode" />
+  <Entity macro="time_mode_scan_longrange" name="Time spent in long range scan mode" />
+  <Entity macro="time_mode_scan_ships" name="Time spent in ship scan mode" />
+  <Entity macro="time_mode_scan_stations" name="Time spent in station scan mode" />
+  <Entity macro="bullets_fired" name="Laser shots fired" />
+  <Entity macro="missiles_fired" name="Missiles launched" />
+  <Entity macro="ships_destroyed" name="Ships destroyed" />
+  <Entity macro="capships_destroyed" name="Capital ships destroyed" />
+  <Entity macro="drones_destroyed" name="Drones destroyed" />
+  <Entity macro="turrets_destroyed" name="Turrets destroyed" />
+  <Entity macro="ships_captured" name="Ships captured" />
+  <Entity macro="ships_claimed" name="Ships claimed" />
+  <Entity macro="boarding_attempts" name="Boarding attempts" />
+  <Entity macro="ships_boarded" name="Capital ships boarded" />
+  <Entity macro="max_boarding_skill" name="Highest marine officer skill" />
+  <Entity macro="missions_accepted" name="Missions accepted" />
+  <Entity macro="missions_completed" name="Missions completed" />
+  <Entity macro="escort_missions_completed" name="Escort missions completed" />
+  <Entity macro="passenger_missions_completed" name="Passenger transport missions completed" />
+  <Entity macro="blackgalaxy_macro" name="effect_universe" />
+  <Entity macro="Cluster_black_Sector01_macro" name="Sigma Sector" />
+  <Entity macro="tzoneCluster_black_Sector01_Zone_macro" name="tzoneCluster_black_Sector01_Zone_macro" />
+  <Entity macro="bomb_player_limpet_mine_collectable_macro" name="Ammunition Container(crate in space)" />
+  <Entity macro="builderstorage_macro" name="Force Field Projector Mk3" />
+  <Entity macro="buildmodule_ships_albion_l_macro" name="LV Shipyard" />
+  <Entity macro="buildmodule_ships_albion_xl_macro" name="XLV Ship Cradle" />
+  <Entity macro="buildmodule_ships_devries_l_macro" name="LV Shipyard l" />
+  <Entity macro="buildmodule_ships_devries_xl_macro" name="XLV Ship Cradle xl" />
+  <Entity macro="buildmodule_ships_omicron_l_macro" name="buildmodule_ships_omicron_l_macro" />
+  <Entity macro="buildmodule_ships_omicron_xl_macro" name="buildmodule_ships_omicron_xl_macro" />
+  <Entity macro="character_default_macro" name="Irturi Thoald" />
+  <Entity macro="Cluster_A_macro" name="Maelstrom" />
+  <Entity macro="dockingbay_player_admin_dv_macro" name="Landing Platform" />
+  <Entity macro="dockingbay_player_admin_macro" name="Landing Platform admin" />
+  <Entity macro="dockingbay_player_admin_ol_macro" name="Landing Platform ol" />
+  <Entity macro="dockingbay_player_ammo_macro" name="Landing Platform ammo" />
+  <Entity macro="dockingbay_player_ammo_ol_macro" name="dockingbay_player_ammo_ol_macro" />
+  <Entity macro="dockingbay_player_bar_dv_macro" name="Landing Platform dv" />
+  <Entity macro="dockingbay_player_bar_macro" name="Landing Platform bar" />
+  <Entity macro="dockingbay_player_bar_ol_macro" name="dockingbay_player_bar_ol_macro" />
+  <Entity macro="dockingbay_player_build_macro" name="Landing Platform build" />
+  <Entity macro="dockingbay_player_drones_macro" name="Landing Platform drones" />
+  <Entity macro="dockingbay_player_drones_ol_macro" name="dockingbay_player_drones_ol_macro" />
+  <Entity macro="dockingbay_player_repair_dv_macro" name="dockingbay_player_repair_dv_macro" />
+  <Entity macro="dockingbay_player_repair_macro" name="Landing Platform repair" />
+  <Entity macro="dockingbay_player_repair_ol_macro" name="dockingbay_player_repair_ol_macro" />
+  <Entity macro="dockingbay_player_ships_dv_macro" name="dockingbay_player_ships_dv_macro" />
+  <Entity macro="dockingbay_player_ships_macro" name="Landing Platform ships" />
+  <Entity macro="dockingbay_player_ships_ol_macro" name="dockingbay_player_ships_ol_macro" />
+  <Entity macro="dockingbay_player_trade_dv_macro" name="dockingbay_player_trade_dv_macro" />
+  <Entity macro="dockingbay_player_trade_macro" name="Landing Platform trade" />
+  <Entity macro="dockingbay_player_trade_ol_macro" name="dockingbay_player_trade_ol_macro" />
+  <Entity macro="dockingbay_player_unique_01_macro" name="Landing Platform 01" />
+  <Entity macro="dockingbay_player_unique_02_macro" name="Landing Platform 02" />
+  <Entity macro="dockingbay_player_unique_03_macro" name="Landing Platform 03" />
+  <Entity macro="dockingbay_player_unique_04_macro" name="Landing Platform 04" />
+  <Entity macro="dockingbay_player_unique_05_macro" name="Landing Platform 05" />
+  <Entity macro="dockingbay_player_unique_06_macro" name="Landing Platform 06" />
+  <Entity macro="dockingbay_player_unique_07_macro" name="Landing Platform 07" />
+  <Entity macro="dockingbay_player_unique_08_macro" name="Landing Platform 08" />
+  <Entity macro="dockingbay_player_unique_09_macro" name="Landing Platform 09" />
+  <Entity macro="dronelaunchpad_invisible_ship_l_01_macro" name="Drone Launch Pad" />
+  <Entity macro="dronelaunchpad_invisible_ship_m_01_macro" name="Drone Launch Pad 01" />
+  <Entity macro="effectcluster_macro" name="effectcluster_macro" />
+  <Entity macro="effectgalaxy_macro" name="effect_universe effectgalaxy" />
+  <Entity macro="effectsector_macro" name="effectsector_macro" />
+  <Entity macro="engine_player_01_macro" name="Equalized Engine Mk1 01" />
+  <Entity macro="engine_player_02_macro" name="Equalized Engine Mk3 02" />
+  <Entity macro="engine_player_03_macro" name="Equalized Engine Mk4 03" />
+  <Entity macro="engine_player_bal_mk1_dam1_macro" name="Equalized Engine Mk1 dam1" />
+  <Entity macro="engine_player_bal_mk1_dam2_macro" name="Equalized Engine Mk1 dam2" />
+  <Entity macro="engine_player_bal_mk1_macro" name="Equalized Engine Mk1 mk1" />
+  <Entity macro="engine_player_bal_mk3_macro" name="Equalized Engine Mk3 mk3" />
+  <Entity macro="engine_player_bal_mk4_macro" name="Equalized Engine Mk4 mk4" />
+  <Entity macro="engine_player_bal_mk5_macro" name="Equalized Engine Mk5 mk5" />
+  <Entity macro="engine_player_man_mk2_macro" name="Sidewinder Engine Mk2 mk2" />
+  <Entity macro="engine_player_man_mk3_macro" name="Sidewinder Engine Mk3 mk3" />
+  <Entity macro="engine_player_man_mk4_macro" name="Sidewinder Engine Mk4 mk4" />
+  <Entity macro="engine_player_man_mk5_macro" name="Sidewinder Engine Mk5 mk5" />
+  <Entity macro="engine_player_spe_mk2_macro" name="Supercharged Engine Mk2 mk2" />
+  <Entity macro="engine_player_spe_mk3_macro" name="Supercharged Engine Mk3 mk3" />
+  <Entity macro="engine_player_spe_mk4_macro" name="Supercharged Engine Mk4 mk4" />
+  <Entity macro="engine_player_spe_mk5_macro" name="Supercharged Engine Mk5 mk5" />
+  <Entity macro="engine_ship_l_kit_freighter_01_macro" name="Plasma/JET LR Turret 01" />
+  <Entity macro="engine_size_l_01_macro" name="engine_size_l_01_macro" />
+  <Entity macro="engine_size_l_02_macro" name="Plasma/JET LR Turret 02" />
+  <Entity macro="engine_size_l_03_macro" name="Matter/Antimatter Drive" />
+  <Entity macro="engine_size_l_04_macro" name="Matter/Antimatter Drive 04" />
+  <Entity macro="engine_size_l_05_macro" name="Matter/Antimatter Drive 05" />
+  <Entity macro="engine_size_l_06_macro" name="Plasma/JET LR Turret 06" />
+  <Entity macro="engine_size_l_07_macro" name="Plasma/JET LR Turret 07" />
+  <Entity macro="engine_size_l_08_macro" name="Plasma/JET LR Turret 08" />
+  <Entity macro="engine_size_l_09_macro" name="Plasma/JET LR Turret 09" />
+  <Entity macro="engine_size_l_10_macro" name="Plasma/JET LR Turret 10" />
+  <Entity macro="engine_size_l_builder_ship_01_macro" name="Matter/Antimatter Drive 01" />
+  <Entity macro="engine_size_l_freighter_liquid_01_macro" name="engine_size_l_freighter_liquid_01_macro" />
+  <Entity macro="engine_size_l_kit_carrier_01_macro" name="engine_size_l_kit_carrier_01_macro" />
+  <Entity macro="engine_size_l_kit_carrier_02_macro" name="Matter/Antimatter Drive 02" />
+  <Entity macro="engine_size_l_kit_freighter_01_macro" name="engine_size_l_kit_freighter_01_macro" />
+  <Entity macro="engine_size_l_miner_gases_01_macro" name="engine_size_l_miner_gases_01_macro" />
+  <Entity macro="engine_size_l_miner_gas_01_macro" name="engine_size_l_miner_gas_01_macro" />
+  <Entity macro="engine_size_l_miner_gas_02_macro" name="engine_size_l_miner_gas_02_macro" />
+  <Entity macro="engine_size_l_miner_hydrogen_01_macro" name="engine_size_l_miner_hydrogen_01_macro" />
+  <Entity macro="engine_size_l_miner_ice_01_macro" name="engine_size_l_miner_ice_01_macro" />
+  <Entity macro="engine_size_m_01_macro" name="engine_size_m_01_macro" />
+  <Entity macro="engine_size_m_02_macro" name="engine_size_m_02_macro" />
+  <Entity macro="engine_size_m_03_macro" name="Matter/Antimatter Drive 03" />
+  <Entity macro="engine_size_m_04_macro" name="engine_size_m_04_macro" />
+  <Entity macro="engine_size_m_05_macro" name="Plasma/JET LR Turret 05" />
+  <Entity macro="engine_size_m_06_macro" name="engine_size_m_06_macro" />
+  <Entity macro="engine_size_m_07_macro" name="engine_size_m_07_macro" />
+  <Entity macro="engine_size_m_attack_ship_01_macro" name="engine_size_m_attack_ship_01_macro" />
+  <Entity macro="engine_size_m_destroyer_red_01_macro" name="engine_size_m_destroyer_red_01_macro" />
+  <Entity macro="engine_size_m_destroyer_split_01_macro" name="engine_size_m_destroyer_split_01_macro" />
+  <Entity macro="engine_size_m_freighter_canteran_01_macro" name="engine_size_m_freighter_canteran_01_macro" />
+  <Entity macro="engine_size_m_miner_gases_01_macro" name="engine_size_m_miner_gases_01_macro" />
+  <Entity macro="engine_size_m_miner_gas_01_macro" name="engine_size_m_miner_gas_01_macro" />
+  <Entity macro="engine_size_m_miner_ice_01_macro" name="engine_size_m_miner_ice_01_macro" />
+  <Entity macro="engine_size_m_miner_minerals_01_macro" name="engine_size_m_miner_minerals_01_macro" />
+  <Entity macro="engine_size_m_miner_ore_01_macro" name="engine_size_m_miner_ore_01_macro" />
+  <Entity macro="engine_size_xl_01_macro" name="engine_size_xl_01_macro" />
+  <Entity macro="engine_size_xl_02_macro" name="engine_size_xl_02_macro" />
+  <Entity macro="engine_size_xl_03_macro" name="Plasma/JET LR Turret 03" />
+  <Entity macro="engine_size_xl_capital_destroyer_01_macro" name="engine_size_xl_capital_destroyer_01_macro" />
+  <Entity macro="engine_size_xl_capital_destroyer_02_macro" name="engine_size_xl_capital_destroyer_02_macro" />
+  <Entity macro="engine_size_xl_cargo_hauler_02_macro" name="engine_size_xl_cargo_hauler_02_macro" />
+  <Entity macro="engine_size_xl_cargo_hauler_03_macro" name="engine_size_xl_cargo_hauler_03_macro" />
+  <Entity macro="engine_size_xl_xenon_01_macro" name="engine_size_xl_xenon_01_macro" />
+  <Entity macro="entity_betty_macro" name="Betty" />
+  <Entity macro="entity_enter_macro" name="Enter" />
+  <Entity macro="entity_exit_macro" name="Exit" />
+  <Entity macro="entity_movetostairs_macro" name="Move To" />
+  <Entity macro="entity_moveto_macro" name="Move To moveto" />
+  <Entity macro="player" name="Ren Otani" />
+  <Entity macro="entity_undock_macro" name="Undock" />
+  <Entity macro="env_asteroids_asteroid_a_l_01_macro" name="Asteroid" />
+  <Entity macro="env_asteroids_asteroid_a_l_02_macro" name="Asteroid 02" />
+  <Entity macro="env_asteroids_asteroid_a_l_03_macro" name="Asteroid 03" />
+  <Entity macro="env_asteroids_asteroid_a_l_04_macro" name="Asteroid 04" />
+  <Entity macro="env_asteroids_asteroid_a_l_05_macro" name="Asteroid 05" />
+  <Entity macro="env_asteroids_asteroid_a_l_crystal_01_macro" name="Asteroid 01" />
+  <Entity macro="env_asteroids_asteroid_a_l_crystal_02_macro" name="env_asteroids_asteroid_a_l_crystal_02_macro" />
+  <Entity macro="env_asteroids_asteroid_a_l_crystal_03_macro" name="env_asteroids_asteroid_a_l_crystal_03_macro" />
+  <Entity macro="env_asteroids_asteroid_a_m_01_macro" name="env_asteroids_asteroid_a_m_01_macro" />
+  <Entity macro="env_asteroids_asteroid_a_m_02_macro" name="env_asteroids_asteroid_a_m_02_macro" />
+  <Entity macro="env_asteroids_asteroid_a_m_03_macro" name="env_asteroids_asteroid_a_m_03_macro" />
+  <Entity macro="env_asteroids_asteroid_a_m_crystal_01_macro" name="env_asteroids_asteroid_a_m_crystal_01_macro" />
+  <Entity macro="env_asteroids_asteroid_a_m_crystal_02_macro" name="env_asteroids_asteroid_a_m_crystal_02_macro" />
+  <Entity macro="env_asteroids_asteroid_a_m_crystal_03_macro" name="env_asteroids_asteroid_a_m_crystal_03_macro" />
+  <Entity macro="env_asteroids_asteroid_a_s_01_macro" name="env_asteroids_asteroid_a_s_01_macro" />
+  <Entity macro="env_asteroids_asteroid_a_s_02_macro" name="env_asteroids_asteroid_a_s_02_macro" />
+  <Entity macro="env_asteroids_asteroid_a_s_03_macro" name="env_asteroids_asteroid_a_s_03_macro" />
+  <Entity macro="env_asteroids_asteroid_a_s_crystal_01_macro" name="env_asteroids_asteroid_a_s_crystal_01_macro" />
+  <Entity macro="env_asteroids_asteroid_a_s_crystal_02_macro" name="env_asteroids_asteroid_a_s_crystal_02_macro" />
+  <Entity macro="env_asteroids_asteroid_a_s_crystal_03_macro" name="env_asteroids_asteroid_a_s_crystal_03_macro" />
+  <Entity macro="env_asteroids_asteroid_a_xs_01_macro" name="env_asteroids_asteroid_a_xs_01_macro" />
+  <Entity macro="env_asteroids_asteroid_a_xs_02_macro" name="env_asteroids_asteroid_a_xs_02_macro" />
+  <Entity macro="env_asteroids_asteroid_a_xs_03_macro" name="env_asteroids_asteroid_a_xs_03_macro" />
+  <Entity macro="env_asteroids_asteroid_a_xs_crystal_01_macro" name="env_asteroids_asteroid_a_xs_crystal_01_macro" />
+  <Entity macro="env_asteroids_asteroid_a_xs_crystal_02_macro" name="env_asteroids_asteroid_a_xs_crystal_02_macro" />
+  <Entity macro="env_asteroids_asteroid_a_xs_crystal_03_macro" name="env_asteroids_asteroid_a_xs_crystal_03_macro" />
+  <Entity macro="env_asteroids_asteroid_a_xxl_01_macro" name="env_asteroids_asteroid_a_xxl_01_macro" />
+  <Entity macro="env_ast_crystal_l_01_macro" name="env_ast_crystal_l_01_macro" />
+  <Entity macro="env_ast_crystal_l_02_macro" name="env_ast_crystal_l_02_macro" />
+  <Entity macro="env_ast_crystal_l_03_macro" name="env_ast_crystal_l_03_macro" />
+  <Entity macro="env_ast_crystal_m_01_macro" name="env_ast_crystal_m_01_macro" />
+  <Entity macro="env_ast_crystal_m_02_macro" name="env_ast_crystal_m_02_macro" />
+  <Entity macro="env_ast_crystal_m_03_macro" name="env_ast_crystal_m_03_macro" />
+  <Entity macro="env_ast_crystal_m_04_macro" name="env_ast_crystal_m_04_macro" />
+  <Entity macro="env_ast_crystal_m_05_macro" name="env_ast_crystal_m_05_macro" />
+  <Entity macro="env_ast_crystal_m_06_macro" name="Asteroid 06" />
+  <Entity macro="env_ast_crystal_s_01_macro" name="env_ast_crystal_s_01_macro" />
+  <Entity macro="env_ast_crystal_s_02_macro" name="env_ast_crystal_s_02_macro" />
+  <Entity macro="env_ast_crystal_s_03_macro" name="env_ast_crystal_s_03_macro" />
+  <Entity macro="env_ast_crystal_s_04_macro" name="env_ast_crystal_s_04_macro" />
+  <Entity macro="env_ast_crystal_s_05_macro" name="env_ast_crystal_s_05_macro" />
+  <Entity macro="env_ast_crystal_s_06_macro" name="env_ast_crystal_s_06_macro" />
+  <Entity macro="env_ast_crystal_xs_01_macro" name="env_ast_crystal_xs_01_macro" />
+  <Entity macro="env_ast_crystal_xs_02_macro" name="env_ast_crystal_xs_02_macro" />
+  <Entity macro="env_ast_crystal_xs_03_macro" name="env_ast_crystal_xs_03_macro" />
+  <Entity macro="env_ast_crystal_xs_04_macro" name="env_ast_crystal_xs_04_macro" />
+  <Entity macro="env_ast_crystal_xs_05_macro" name="env_ast_crystal_xs_05_macro" />
+  <Entity macro="env_ast_crystal_xs_06_macro" name="env_ast_crystal_xs_06_macro" />
+  <Entity macro="env_ast_ice_l_01_macro" name="env_ast_ice_l_01_macro" />
+  <Entity macro="env_ast_ice_l_02_macro" name="env_ast_ice_l_02_macro" />
+  <Entity macro="env_ast_ice_l_03_macro" name="env_ast_ice_l_03_macro" />
+  <Entity macro="env_ast_ice_m_01_frac_macro" name="Asteroid frac" />
+  <Entity macro="env_ast_ice_m_01_macro" name="env_ast_ice_m_01_macro" />
+  <Entity macro="env_ast_ice_m_02_frac_macro" name="env_ast_ice_m_02_frac_macro" />
+  <Entity macro="env_ast_ice_m_02_macro" name="env_ast_ice_m_02_macro" />
+  <Entity macro="env_ast_ice_m_03_frac_macro" name="env_ast_ice_m_03_frac_macro" />
+  <Entity macro="env_ast_ice_m_03_macro" name="env_ast_ice_m_03_macro" />
+  <Entity macro="env_ast_ice_m_04_frac_macro" name="env_ast_ice_m_04_frac_macro" />
+  <Entity macro="env_ast_ice_m_04_macro" name="env_ast_ice_m_04_macro" />
+  <Entity macro="env_ast_ice_m_05_frac_macro" name="env_ast_ice_m_05_frac_macro" />
+  <Entity macro="env_ast_ice_m_05_macro" name="env_ast_ice_m_05_macro" />
+  <Entity macro="env_ast_ice_m_06_frac_macro" name="env_ast_ice_m_06_frac_macro" />
+  <Entity macro="env_ast_ice_m_06_macro" name="env_ast_ice_m_06_macro" />
+  <Entity macro="env_ast_ice_s_01_frac_macro" name="env_ast_ice_s_01_frac_macro" />
+  <Entity macro="env_ast_ice_s_01_macro" name="env_ast_ice_s_01_macro" />
+  <Entity macro="env_ast_ice_s_02_frac_macro" name="env_ast_ice_s_02_frac_macro" />
+  <Entity macro="env_ast_ice_s_02_macro" name="env_ast_ice_s_02_macro" />
+  <Entity macro="env_ast_ice_s_03_frac_macro" name="env_ast_ice_s_03_frac_macro" />
+  <Entity macro="env_ast_ice_s_03_macro" name="env_ast_ice_s_03_macro" />
+  <Entity macro="env_ast_ice_s_04_frac_macro" name="env_ast_ice_s_04_frac_macro" />
+  <Entity macro="env_ast_ice_s_04_macro" name="env_ast_ice_s_04_macro" />
+  <Entity macro="env_ast_ice_s_05_frac_macro" name="env_ast_ice_s_05_frac_macro" />
+  <Entity macro="env_ast_ice_s_05_macro" name="env_ast_ice_s_05_macro" />
+  <Entity macro="env_ast_ice_s_06_frac_macro" name="env_ast_ice_s_06_frac_macro" />
+  <Entity macro="env_ast_ice_s_06_macro" name="env_ast_ice_s_06_macro" />
+  <Entity macro="env_ast_ice_xl_01_macro" name="env_ast_ice_xl_01_macro" />
+  <Entity macro="env_ast_ice_xs_01_frac_macro" name="env_ast_ice_xs_01_frac_macro" />
+  <Entity macro="env_ast_ice_xs_01_macro" name="env_ast_ice_xs_01_macro" />
+  <Entity macro="env_ast_ice_xs_02_frac_macro" name="env_ast_ice_xs_02_frac_macro" />
+  <Entity macro="env_ast_ice_xs_02_macro" name="env_ast_ice_xs_02_macro" />
+  <Entity macro="env_ast_ice_xs_03_frac_macro" name="env_ast_ice_xs_03_frac_macro" />
+  <Entity macro="env_ast_ice_xs_03_macro" name="env_ast_ice_xs_03_macro" />
+  <Entity macro="env_ast_ice_xs_04_frac_macro" name="env_ast_ice_xs_04_frac_macro" />
+  <Entity macro="env_ast_ice_xs_04_macro" name="env_ast_ice_xs_04_macro" />
+  <Entity macro="env_ast_ice_xs_05_frac_macro" name="env_ast_ice_xs_05_frac_macro" />
+  <Entity macro="env_ast_ice_xs_05_macro" name="env_ast_ice_xs_05_macro" />
+  <Entity macro="env_ast_ice_xs_06_frac_macro" name="env_ast_ice_xs_06_frac_macro" />
+  <Entity macro="env_ast_ice_xs_06_macro" name="env_ast_ice_xs_06_macro" />
+  <Entity macro="env_ast_niv_l_01_macro" name="env_ast_niv_l_01_macro" />
+  <Entity macro="env_ast_niv_l_02_macro" name="env_ast_niv_l_02_macro" />
+  <Entity macro="env_ast_niv_l_03_macro" name="env_ast_niv_l_03_macro" />
+  <Entity macro="env_ast_niv_l_04_macro" name="env_ast_niv_l_04_macro" />
+  <Entity macro="env_ast_niv_l_05_macro" name="env_ast_niv_l_05_macro" />
+  <Entity macro="env_ast_niv_m_01_frac_macro" name="env_ast_niv_m_01_frac_macro" />
+  <Entity macro="env_ast_niv_m_01_macro" name="env_ast_niv_m_01_macro" />
+  <Entity macro="env_ast_niv_m_02_frac_macro" name="env_ast_niv_m_02_frac_macro" />
+  <Entity macro="env_ast_niv_m_02_macro" name="env_ast_niv_m_02_macro" />
+  <Entity macro="env_ast_niv_m_03_frac_macro" name="env_ast_niv_m_03_frac_macro" />
+  <Entity macro="env_ast_niv_m_03_macro" name="env_ast_niv_m_03_macro" />
+  <Entity macro="env_ast_niv_m_04_frac_macro" name="env_ast_niv_m_04_frac_macro" />
+  <Entity macro="env_ast_niv_m_04_macro" name="env_ast_niv_m_04_macro" />
+  <Entity macro="env_ast_niv_m_05_frac_macro" name="env_ast_niv_m_05_frac_macro" />
+  <Entity macro="env_ast_niv_m_05_macro" name="env_ast_niv_m_05_macro" />
+  <Entity macro="env_ast_niv_s_01_frac_macro" name="env_ast_niv_s_01_frac_macro" />
+  <Entity macro="env_ast_niv_s_01_macro" name="env_ast_niv_s_01_macro" />
+  <Entity macro="env_ast_niv_s_02_frac_macro" name="env_ast_niv_s_02_frac_macro" />
+  <Entity macro="env_ast_niv_s_02_macro" name="env_ast_niv_s_02_macro" />
+  <Entity macro="env_ast_niv_s_03_frac_macro" name="env_ast_niv_s_03_frac_macro" />
+  <Entity macro="env_ast_niv_s_03_macro" name="env_ast_niv_s_03_macro" />
+  <Entity macro="env_ast_niv_s_04_frac_macro" name="env_ast_niv_s_04_frac_macro" />
+  <Entity macro="env_ast_niv_s_04_macro" name="env_ast_niv_s_04_macro" />
+  <Entity macro="env_ast_niv_s_05_frac_macro" name="env_ast_niv_s_05_frac_macro" />
+  <Entity macro="env_ast_niv_s_05_macro" name="env_ast_niv_s_05_macro" />
+  <Entity macro="env_ast_niv_xl_01_macro" name="env_ast_niv_xl_01_macro" />
+  <Entity macro="env_ast_niv_xl_02_macro" name="env_ast_niv_xl_02_macro" />
+  <Entity macro="env_ast_niv_xl_03_macro" name="env_ast_niv_xl_03_macro" />
+  <Entity macro="env_ast_niv_xs_01_frac_macro" name="env_ast_niv_xs_01_frac_macro" />
+  <Entity macro="env_ast_niv_xs_01_macro" name="env_ast_niv_xs_01_macro" />
+  <Entity macro="env_ast_niv_xs_02_frac_macro" name="env_ast_niv_xs_02_frac_macro" />
+  <Entity macro="env_ast_niv_xs_02_macro" name="env_ast_niv_xs_02_macro" />
+  <Entity macro="env_ast_niv_xs_03_frac_macro" name="env_ast_niv_xs_03_frac_macro" />
+  <Entity macro="env_ast_niv_xs_03_macro" name="env_ast_niv_xs_03_macro" />
+  <Entity macro="env_ast_niv_xs_04_frac_macro" name="env_ast_niv_xs_04_frac_macro" />
+  <Entity macro="env_ast_niv_xs_04_macro" name="env_ast_niv_xs_04_macro" />
+  <Entity macro="env_ast_niv_xs_05_frac_macro" name="env_ast_niv_xs_05_frac_macro" />
+  <Entity macro="env_ast_niv_xs_05_macro" name="env_ast_niv_xs_05_macro" />
+  <Entity macro="env_ast_ore_l_01_macro" name="env_ast_ore_l_01_macro" />
+  <Entity macro="env_ast_ore_l_02_macro" name="env_ast_ore_l_02_macro" />
+  <Entity macro="env_ast_ore_l_03_macro" name="env_ast_ore_l_03_macro" />
+  <Entity macro="env_ast_ore_l_04_macro" name="env_ast_ore_l_04_macro" />
+  <Entity macro="env_ast_ore_l_05_macro" name="env_ast_ore_l_05_macro" />
+  <Entity macro="env_ast_ore_m_01_frac_macro" name="env_ast_ore_m_01_frac_macro" />
+  <Entity macro="env_ast_ore_m_01_macro" name="env_ast_ore_m_01_macro" />
+  <Entity macro="env_ast_ore_m_02_frac_macro" name="env_ast_ore_m_02_frac_macro" />
+  <Entity macro="env_ast_ore_m_02_macro" name="env_ast_ore_m_02_macro" />
+  <Entity macro="env_ast_ore_m_03_frac_macro" name="env_ast_ore_m_03_frac_macro" />
+  <Entity macro="env_ast_ore_m_03_macro" name="env_ast_ore_m_03_macro" />
+  <Entity macro="env_ast_ore_m_04_frac_macro" name="env_ast_ore_m_04_frac_macro" />
+  <Entity macro="env_ast_ore_m_04_macro" name="env_ast_ore_m_04_macro" />
+  <Entity macro="env_ast_ore_m_05_frac_macro" name="env_ast_ore_m_05_frac_macro" />
+  <Entity macro="env_ast_ore_m_05_macro" name="env_ast_ore_m_05_macro" />
+  <Entity macro="env_ast_ore_m_06_frac_macro" name="env_ast_ore_m_06_frac_macro" />
+  <Entity macro="env_ast_ore_m_06_macro" name="env_ast_ore_m_06_macro" />
+  <Entity macro="env_ast_ore_s_01_frac_macro" name="env_ast_ore_s_01_frac_macro" />
+  <Entity macro="env_ast_ore_s_01_macro" name="env_ast_ore_s_01_macro" />
+  <Entity macro="env_ast_ore_s_02_frac_macro" name="env_ast_ore_s_02_frac_macro" />
+  <Entity macro="env_ast_ore_s_02_macro" name="env_ast_ore_s_02_macro" />
+  <Entity macro="env_ast_ore_s_03_frac_macro" name="env_ast_ore_s_03_frac_macro" />
+  <Entity macro="env_ast_ore_s_03_macro" name="env_ast_ore_s_03_macro" />
+  <Entity macro="env_ast_ore_s_04_frac_macro" name="env_ast_ore_s_04_frac_macro" />
+  <Entity macro="env_ast_ore_s_04_macro" name="env_ast_ore_s_04_macro" />
+  <Entity macro="env_ast_ore_s_05_frac_macro" name="env_ast_ore_s_05_frac_macro" />
+  <Entity macro="env_ast_ore_s_05_macro" name="env_ast_ore_s_05_macro" />
+  <Entity macro="env_ast_ore_xs_01_frac_macro" name="env_ast_ore_xs_01_frac_macro" />
+  <Entity macro="env_ast_ore_xs_01_macro" name="env_ast_ore_xs_01_macro" />
+  <Entity macro="env_ast_ore_xs_02_frac_macro" name="env_ast_ore_xs_02_frac_macro" />
+  <Entity macro="env_ast_ore_xs_02_macro" name="env_ast_ore_xs_02_macro" />
+  <Entity macro="env_ast_ore_xs_03_frac_macro" name="env_ast_ore_xs_03_frac_macro" />
+  <Entity macro="env_ast_ore_xs_03_macro" name="env_ast_ore_xs_03_macro" />
+  <Entity macro="env_ast_ore_xs_04_frac_macro" name="env_ast_ore_xs_04_frac_macro" />
+  <Entity macro="env_ast_ore_xs_04_macro" name="env_ast_ore_xs_04_macro" />
+  <Entity macro="env_ast_ore_xs_05_frac_macro" name="env_ast_ore_xs_05_frac_macro" />
+  <Entity macro="env_ast_ore_xs_05_macro" name="env_ast_ore_xs_05_macro" />
+  <Entity macro="env_debris_debris_m_01_macro" name="Wreck" />
+  <Entity macro="env_debris_debris_m_02_macro" name="Wreck 02" />
+  <Entity macro="env_debris_debris_m_03_macro" name="Wreck 03" />
+  <Entity macro="env_debris_debris_m_04_macro" name="Wreck 04" />
+  <Entity macro="env_debris_debris_m_05_macro" name="Wreck 05" />
+  <Entity macro="env_debris_debris_m_06_macro" name="Wreck 06" />
+  <Entity macro="env_debris_debris_m_07_macro" name="Wreck 07" />
+  <Entity macro="env_debris_debris_m_08_macro" name="Wreck 08" />
+  <Entity macro="env_debris_debris_m_09_macro" name="Wreck 09" />
+  <Entity macro="env_debris_debris_m_10_macro" name="Wreck 10" />
+  <Entity macro="env_debris_debris_s_01_macro" name="Wreck 01" />
+  <Entity macro="env_debris_debris_xl_01_macro" name="env_debris_debris_xl_01_macro" />
+  <Entity macro="env_debris_debris_xl_02_macro" name="env_debris_debris_xl_02_macro" />
+  <Entity macro="env_debris_debris_xl_03_macro" name="env_debris_debris_xl_03_macro" />
+  <Entity macro="env_debris_debris_xl_04_macro" name="env_debris_debris_xl_04_macro" />
+  <Entity macro="env_debris_debris_xl_05_macro" name="env_debris_debris_xl_05_macro" />
+  <Entity macro="env_debris_debris_xl_06_macro" name="env_debris_debris_xl_06_macro" />
+  <Entity macro="env_debris_debris_xl_07_macro" name="env_debris_debris_xl_07_macro" />
+  <Entity macro="env_debris_debris_xl_08_macro" name="env_debris_debris_xl_08_macro" />
+  <Entity macro="XU_EP1_universe_macro" name="Galaxy" />
+  <Entity macro="generic_storage_capital_all_macro" name="Generic Storage" />
+  <Entity macro="impulseemitter_bullet_macro" name="Impulse Bullet" />
+  <Entity macro="interiors_crates_size_l_macro" name="Locker(large crate)" />
+  <Entity macro="interiors_crates_size_m_macro" name="Trunk(medium crate)" />
+  <Entity macro="interiors_crates_size_s_macro" name="Case(small crate)" />
+  <Entity macro="interiors_rooms_swa_button_01_macro" name="Control(button)" />
+  <Entity macro="interiors_rooms_swa_controlpanel_macro" name="Security Control Panel" />
+  <Entity macro="landmarks_badlands_colony_production_macro" name="Badlands Minehead" />
+  <Entity macro="landmarks_badlands_colony_storage_macro" name="Badlands Silo" />
+  <Entity macro="landmarks_core_dig_production_macro" name="Core Minehead" />
+  <Entity macro="landmarks_core_dig_storage_macro" name="Core Stockpile" />
+  <Entity macro="landmarks_lonely_giant_production_macro" name="Hydrogen Barrier" />
+  <Entity macro="landmarks_lonely_giant_storage_macro" name="H3 Tank Farm" />
+  <Entity macro="landmarks_unique_aqueduct_macro" name="The Aqueduct" />
+  <Entity macro="landmarks_unique_ar_badlands_colony_macro" name="Badlands Colony" />
+  <Entity macro="landmarks_unique_ar_lonely_giant_macro" name="Lonely Giant" />
+  <Entity macro="landmarks_unique_core_dig_macro" name="Core Dig" />
+  <Entity macro="landmarks_unique_split_lostcolony_macro" name="Lost Colony" />
+  <Entity macro="standardholomap_macro" name="Empty Space" />
+  <Entity macro="missilelauncher_drone_dumbfire_mk1_macro" name="Missile Launcher" />
+  <Entity macro="missilelauncher_drone_dumbfire_mk2_macro" name="Missile Launcher mk2" />
+  <Entity macro="missilelauncher_invisible_dumbfire_mk1_macro" name="Missile Launcher mk1" />
+  <Entity macro="missilelauncher_invisible_guided_mk1_macro" name="missilelauncher_invisible_guided_mk1_macro" />
+  <Entity macro="missilelauncher_invisible_torpedo_macro" name="Missile Launcher torpedo" />
+  <Entity macro="missileturret_df_mk1_macro" name="Missile Turret Mk1" />
+  <Entity macro="missile_launcher_dumbfire_macro" name="Newtonian V Crushers dumbfire" />
+  <Entity macro="missile_launcher_dumbfire_mk1_macro" name="Dumbfire Missile" />
+  <Entity macro="missile_launcher_guided_macro" name="Sunstalker Missiles guided" />
+  <Entity macro="missile_launcher_guided_mk1_macro" name="Guided Missile" />
+  <Entity macro="missile_launcher_swarm_macro" name="Astrobee Swarmkillers swarm" />
+  <Entity macro="missile_launcher_torpedo_macro" name="Novadrones torpedo" />
+  <Entity macro="missile_player_dumbfire_macro" name="V Crushers" />
+  <Entity macro="missile_player_guided_macro" name="Sunstalkers" />
+  <Entity macro="missile_player_swarm_macro" name="Astrobees" />
+  <Entity macro="missile_player_torpedo_macro" name="missile_player_torpedo_macro" />
+  <Entity macro="missile_turret_dumbfire_macro" name="missile_turret_dumbfire_macro" />
+  <Entity macro="missile_turret_swarm_macro" name="missile_turret_swarm_macro" />
+  <Entity macro="plasmaemitter_bullet_macro" name="Plasmaemitter Bullet" />
+  <Entity macro="plotcharacter_debora_gimbal_macro" name="Debora Gimbal" />
+  <Entity macro="plotcharacter_drew_haswell_macro" name="Drew Haswell" />
+  <Entity macro="plotcharacter_falk_borman_macro" name="Falk Borman" />
+  <Entity macro="plotcharacter_hanson_derby_macro" name="Hanson Derby" />
+  <Entity macro="plotcharacter_heather_bayes_macro" name="Heather Bayes" />
+  <Entity macro="plotcharacter_jeffry_halifax_macro" name="Jeffry Halifax" />
+  <Entity macro="plotcharacter_jimee_tomson_macro" name="Jimee Tomson" />
+  <Entity macro="plotcharacter_karen_stringer_macro" name="Karen Stringer" />
+  <Entity macro="plotcharacter_kol_macro" name="Kol t'Yo" />
+  <Entity macro="plotcharacter_leea_kaswin_macro" name="Leea Kaswin" />
+  <Entity macro="plotcharacter_mariya_rybak_macro" name="Mariya Rybak" />
+  <Entity macro="plotcharacter_neyl_colbern_macro" name="Neyl Colbern" />
+  <Entity macro="plotcharacter_pedro_nakano_macro" name="Pedro Nakano" />
+  <Entity macro="plotcharacter_yoolis_macro" name="Uliroos Tugoras Yoolis IV" />
+  <Entity macro="production_antimattercells_macro" name="A/M Cyclotron" />
+  <Entity macro="production_bioopticwiring_macro" name="Bio-Optics Fac" />
+  <Entity macro="production_chemicalcompounds_macro" name="Chem Refinery" />
+  <Entity macro="production_cutcrystals_macro" name="Crystal Cuttery" />
+  <Entity macro="production_energy_macro" name="E-Cell Fab" />
+  <Entity macro="production_food_macro" name="Foodstuff Fac" />
+  <Entity macro="production_fuelcells_macro" name="Fuel Cell Mill" />
+  <Entity macro="production_fusionreactor_macro" name="Fusion Core Fac" />
+  <Entity macro="production_holtzmanfieldgen_macro" name="Podkletnov Fab" />
+  <Entity macro="production_ice_macro_macro" name="Ice Refinery" />
+  <Entity macro="production_ioncells_macro" name="Ion Cell Plant" />
+  <Entity macro="production_luxuryfoodrations_macro" name="Fuel Cell Mill luxuryfoodrations" />
+  <Entity macro="production_meat_macro" name="Argnu Paradise" />
+  <Entity macro="production_medicalsupplies_macro" name="Pharma Platform" />
+  <Entity macro="production_microchips_macro" name="Chip Fab" />
+  <Entity macro="production_narcotics_macro" name="Narcotics Lab" />
+  <Entity macro="production_nividiumgems_macro" name="Cube Plant" />
+  <Entity macro="production_plasmacells_macro" name="Plasma Cyclotron" />
+  <Entity macro="production_plasmaflowregulator_macro" name="Plasma Tech" />
+  <Entity macro="production_quantumtubes_macro" name="QTube Y Fab" />
+  <Entity macro="production_refinedmetals_macro" name="Steel Refinery" />
+  <Entity macro="production_reinforcedmetalplating_macro" name="Plate Foundry" />
+  <Entity macro="production_scanningarray_macro" name="ScannAr Facility" />
+  <Entity macro="production_siliconwafers_macro" name="Wafer Plant" />
+  <Entity macro="production_spacefuel_macro" name="Liquor Still" />
+  <Entity macro="production_spaceweed_macro" name="Herb Garden" />
+  <Entity macro="production_spices_macro" name="Spice Tubes" />
+  <Entity macro="production_warheads_macro" name="Warhead Forge" />
+  <Entity macro="production_water_macro" name="Condenser Still" />
+  <Entity macro="production_wheat_10_macro" name="Valley Forge" />
+  <Entity macro="production_wheat_macro" name="Valley Forge wheat" />
+  <Entity macro="production_wheat_sub10_macro" name="Valley Forge sub10" />
+  <Entity macro="props_gates_anc_gate_b_macro" name="Jump Gate" />
+  <Entity macro="props_gates_anc_gate_macro" name="Jump Gate gate" />
+  <Entity macro="props_gates_jumpbeacon_macro" name="Jump Beacon" />
+  <Entity macro="props_he_super_highway_entrance_macro" name="Superhighway" />
+  <Entity macro="props_he_super_highway_exit_macro" name="Superhighway exit" />
+  <Entity macro="props_sm_container_s_energy_macro" name="Ware Container(crate in space)" />
+  <Entity macro="props_sm_container_s_food_macro" name="Ware Container(crate in space) food" />
+  <Entity macro="props_sm_container_s_generic_macro" name="Ware Container(crate in space) generic" />
+  <Entity macro="props_sm_container_s_liquid_macro" name="Ware Container(crate in space) liquid" />
+  <Entity macro="props_sm_container_s_special_macro" name="Ware Container(crate in space) special" />
+  <Entity macro="props_sm_container_xl_liquid_macro" name="props_sm_container_xl_liquid_macro" />
+  <Entity macro="props_sm_container_xs_ammo_macro" name="Ammunition Container(crate in space) ammo" />
+  <Entity macro="props_sm_container_xs_generic02_macro" name="Ware Container(crate in space) generic02" />
+  <Entity macro="props_sm_container_xs_generic_macro" name="props_sm_container_xs_generic_macro" />
+  <Entity macro="props_sm_container_xs_shieldrestore_macro" name="Shield Repair Container(crate in space)" />
+  <Entity macro="props_sm_container_xs_wares_macro" name="Ware Container(crate in space) wares" />
+  <Entity macro="props_surf_ar_depot_liquid_1_macro" name="Liquid Temporary Storage" />
+  <Entity macro="props_surf_ar_docks_size_s_floor_invisible_macro" name="Drone Dock" />
+  <Entity macro="props_surf_ar_docks_size_s_floor_macro" name="Drone Launch Pad floor" />
+  <Entity macro="props_surf_ar_jumpdrive_l_macro" name="Jump Tunnel Device" />
+  <Entity macro="props_surf_ar_jumpdrive_macro" name="Jump Tunnel Device jumpdrive" />
+  <Entity macro="props_surf_ar_steam_01_macro" name="Ventilation System" />
+  <Entity macro="props_surf_ar_steam_02_macro" name="Heat Exchanger" />
+  <Entity macro="props_surf_ar_steam_03_macro" name="Air Conditioner" />
+  <Entity macro="props_surf_ar_steam_04_macro" name="Exhaust Installation" />
+  <Entity macro="props_surf_playerdock_admin_dv_macro" name="props_surf_playerdock_admin_dv_macro" />
+  <Entity macro="props_surf_playerdock_admin_macro" name="props_surf_playerdock_admin_macro" />
+  <Entity macro="props_surf_playerdock_admin_ol_macro" name="props_surf_playerdock_admin_ol_macro" />
+  <Entity macro="props_surf_playerdock_ammo_macro" name="props_surf_playerdock_ammo_macro" />
+  <Entity macro="props_surf_playerdock_ammo_ol_macro" name="props_surf_playerdock_ammo_ol_macro" />
+  <Entity macro="props_surf_playerdock_bar_dv_macro" name="props_surf_playerdock_bar_dv_macro" />
+  <Entity macro="props_surf_playerdock_bar_macro" name="props_surf_playerdock_bar_macro" />
+  <Entity macro="props_surf_playerdock_bar_ol_macro" name="props_surf_playerdock_bar_ol_macro" />
+  <Entity macro="props_surf_playerdock_drones_macro" name="props_surf_playerdock_drones_macro" />
+  <Entity macro="props_surf_playerdock_drones_ol_macro" name="props_surf_playerdock_drones_ol_macro" />
+  <Entity macro="props_surf_playerdock_repair_dv_macro" name="props_surf_playerdock_repair_dv_macro" />
+  <Entity macro="props_surf_playerdock_repair_macro" name="props_surf_playerdock_repair_macro" />
+  <Entity macro="props_surf_playerdock_repair_ol_macro" name="props_surf_playerdock_repair_ol_macro" />
+  <Entity macro="props_surf_playerdock_ships_dv_macro" name="props_surf_playerdock_ships_dv_macro" />
+  <Entity macro="props_surf_playerdock_ships_macro" name="props_surf_playerdock_ships_macro" />
+  <Entity macro="props_surf_playerdock_ships_ol_macro" name="props_surf_playerdock_ships_ol_macro" />
+  <Entity macro="props_surf_playerdock_trade_dv_macro" name="props_surf_playerdock_trade_dv_macro" />
+  <Entity macro="props_surf_playerdock_trade_macro" name="props_surf_playerdock_trade_macro" />
+  <Entity macro="props_surf_playerdock_trade_ol_macro" name="props_surf_playerdock_trade_ol_macro" />
+  <Entity macro="props_surf_playerdock_unique_01_macro" name="props_surf_playerdock_unique_01_macro" />
+  <Entity macro="props_surf_playerdock_unique_02_macro" name="props_surf_playerdock_unique_02_macro" />
+  <Entity macro="props_surf_playerdock_unique_03_macro" name="props_surf_playerdock_unique_03_macro" />
+  <Entity macro="props_surf_playerdock_unique_04_macro" name="props_surf_playerdock_unique_04_macro" />
+  <Entity macro="props_surf_playerdock_unique_05_macro" name="props_surf_playerdock_unique_05_macro" />
+  <Entity macro="props_surf_playerdock_unique_06_macro" name="props_surf_playerdock_unique_06_macro" />
+  <Entity macro="props_surf_playerdock_unique_07_macro" name="props_surf_playerdock_unique_07_macro" />
+  <Entity macro="props_surf_playerdock_unique_08_macro" name="props_surf_playerdock_unique_08_macro" />
+  <Entity macro="props_surf_playerdock_unique_09_macro" name="props_surf_playerdock_unique_09_macro" />
+  <Entity macro="props_wps_ar_def_turret_l_macro" name="Large Turret" />
+  <Entity macro="props_wps_ar_weapon_flak_macro" name="Flak" />
+  <Entity macro="props_wps_beam_macro" name="Missile Launcher beam" />
+  <Entity macro="props_wps_beam_player_macro" name="Missile Launcher player" />
+  <Entity macro="props_wps_impulseemitter_macro" name="Pulsed Maser Mk1 impulseemitter" />
+  <Entity macro="props_wps_impulseemitter_player_macro" name="Pulsed Maser Mk1 player" />
+  <Entity macro="props_wps_impulseemitter_player_mk2_macro" name="Pulsed Maser Mk1 mk2" />
+  <Entity macro="props_wps_mg_macro" name="Pulsed Maser Mk2 mg" />
+  <Entity macro="props_wps_mg_player_macro" name="Pulsed Maser Mk2 player" />
+  <Entity macro="props_wps_plasmaemitter_macro" name="Plasma Repeater Mk1" />
+  <Entity macro="props_wps_plasmaemitter_player_macro" name="Plasma Repeater Mk1 player" />
+  <Entity macro="props_wps_shotgun_macro" name="Plasma Repeater Mk2" />
+  <Entity macro="props_wps_shotgun_player_macro" name="Plasma Repeater Mk2 player" />
+  <Entity macro="radar_ship_l_freighter_01_macro" name="Scanning Array 01" />
+  <Entity macro="radar_ship_l_military_01_macro" name="radar_ship_l_military_01_macro" />
+  <Entity macro="radar_ship_xl_freighter_01_macro" name="radar_ship_xl_freighter_01_macro" />
+  <Entity macro="radar_ship_xl_military_01_macro" name="radar_ship_xl_military_01_macro" />
+  <Entity macro="Cluster_A_SuperHighway01_macro" name="Cluster_A_SuperHighway01" />
+  <Entity macro="Cluster_A_Sector01_macro" name="Sigma Sector Sector01" />
+  <Entity macro="shieldgenerator_player_01_macro" name="Equalized Engine Mk5 01" />
+  <Entity macro="shieldgenerator_player_02_macro" name="Sidewinder Engine Mk2 02" />
+  <Entity macro="shieldgenerator_player_03_macro" name="Sidewinder Engine Mk3 03" />
+  <Entity macro="shieldgenerator_player_bal_mk1_macro" name="Steady Shield Mk1 mk1" />
+  <Entity macro="shieldgenerator_player_bal_mk3_macro" name="Steady Shield Mk3 mk3" />
+  <Entity macro="shieldgenerator_player_bal_mk4_macro" name="Steady Shield Mk4 mk4" />
+  <Entity macro="shieldgenerator_player_bal_mk5_macro" name="Steady Shield Mk5 mk5" />
+  <Entity macro="shieldgenerator_player_cap_mk2_macro" name="Behemoth Shield Mk2 mk2" />
+  <Entity macro="shieldgenerator_player_cap_mk3_macro" name="Behemoth Shield Mk3 mk3" />
+  <Entity macro="shieldgenerator_player_cap_mk4_macro" name="Behemoth Shield Mk4 mk4" />
+  <Entity macro="shieldgenerator_player_cap_mk5_macro" name="Behemoth Shield Mk5 mk5" />
+  <Entity macro="shieldgenerator_player_rec_mk2_macro" name="Dashing Shield Mk2 mk2" />
+  <Entity macro="shieldgenerator_player_rec_mk3_macro" name="Dashing Shield Mk3 mk3" />
+  <Entity macro="shieldgenerator_player_rec_mk4_macro" name="Dashing Shield Mk4 mk4" />
+  <Entity macro="shieldgenerator_player_rec_mk5_macro" name="Dashing Shield Mk5 mk5" />
+  <Entity macro="shieldgenerator_size_m_mk1_macro" name="Force Field Projector Mk1" />
+  <Entity macro="shieldgenerator_size_m_mk2_macro" name="Force Field Projector Mk2" />
+  <Entity macro="shieldgenerator_size_m_mk3_macro" name="Force Field Projector Mk3 mk3" />
+  <Entity macro="shieldgenerator_size_s_mk1_macro" name="Force Field Projector mk1" />
+  <Entity macro="shotgun_bullet_macro" name="Shotgun Bullet" />
+  <Entity macro="software_trading_computer_macro" name="Trading Computer computer" />
+  <Entity macro="storage_ship_l_bulk_01_macro" name="Bulk Storage" />
+  <Entity macro="storage_ship_l_bulk_02_macro" name="Bulk Storage 02" />
+  <Entity macro="storage_ship_l_bulk_03_macro" name="Bulk Storage 03" />
+  <Entity macro="storage_ship_l_bulk_04_macro" name="Bulk Storage 04" />
+  <Entity macro="storage_ship_l_container_01_macro" name="Container Storage" />
+  <Entity macro="storage_ship_l_container_02_macro" name="Container Storage 02" />
+  <Entity macro="storage_ship_l_energy_01_macro" name="Energy Storage" />
+  <Entity macro="storage_ship_l_energy_02_macro" name="Energy Storage 02" />
+  <Entity macro="storage_ship_l_fuel_01_macro" name="Fuel Storage" />
+  <Entity macro="storage_ship_l_hybrid_01_macro" name="Hybrid Storage" />
+  <Entity macro="storage_ship_l_hybrid_02_macro" name="Hybrid Storage 02" />
+  <Entity macro="storage_ship_l_liquid_01_macro" name="Liquid Storage" />
+  <Entity macro="storage_ship_l_liquid_02_macro" name="Liquid Storage 02" />
+  <Entity macro="storage_ship_l_liquid_03_macro" name="Liquid Storage 03" />
+  <Entity macro="storage_ship_m_bulk_01_macro" name="Bulk Storage 01" />
+  <Entity macro="storage_ship_m_container_01_macro" name="Container Storage 01" />
+  <Entity macro="storage_ship_m_energy_01_macro" name="Energy Storage 01" />
+  <Entity macro="storage_ship_m_liquid_01_macro" name="Liquid Storage 01" />
+  <Entity macro="storage_ship_xl_bulk_01_macro" name="storage_ship_xl_bulk_01_macro" />
+  <Entity macro="storage_ship_xl_container_01_macro" name="storage_ship_xl_container_01_macro" />
+  <Entity macro="storage_ship_xl_energy_01_macro" name="storage_ship_xl_energy_01_macro" />
+  <Entity macro="storage_ship_xl_fuel_01_macro" name="Fuel Storage 01" />
+  <Entity macro="storage_ship_xl_liquid_01_macro" name="storage_ship_xl_liquid_01_macro" />
+  <Entity macro="storage_ship_xl_universal_01_macro" name="Universal Storage" />
+  <Entity macro="storage_ship_xs_universal_01_macro" name="Universal Storage 01" />
+  <Entity macro="storage_temp_huge_macro" name="Universal Storage huge" />
+  <Entity macro="struct_bt_alb_big_ships_yard_macro" name="Capital Shipyard" />
+  <Entity macro="struct_bt_alb_cattle_ranch_macro" name="Argnu Stockyard" />
+  <Entity macro="struct_bt_alb_cell_refinery_macro" name="Cell Fab Matrix" />
+  <Entity macro="struct_bt_alb_constructionmaterial_production_macro" name="Construction Shop" />
+  <Entity macro="struct_bt_alb_crystal_refinement_macro" name="Crystal Supplier" />
+  <Entity macro="struct_bt_alb_drone_complex_macro" name="URV Parts Supply" />
+  <Entity macro="struct_bt_alb_drone_factory_macro" name="URV BTO Line" />
+  <Entity macro="struct_bt_alb_farm_complex_macro" name="Floating Meadows" />
+  <Entity macro="struct_bt_alb_food_production_complex_macro" name="Foodstuffs Supply" />
+  <Entity macro="struct_bt_alb_food_production_plant_macro" name="Staples Farmery" />
+  <Entity macro="struct_bt_alb_fuelstation_macro" name="Cell Recharge Fac" />
+  <Entity macro="struct_bt_alb_hightec_construction_macro" name="High Tech Fab" />
+  <Entity macro="struct_bt_alb_high_energy_construction_macro" name="Ship Tech Fab" />
+  <Entity macro="struct_bt_alb_laboratory_macro" name="Tech Laboratory" />
+  <Entity macro="struct_bt_alb_medical_supplies_macro" name="Med Dispensary" />
+  <Entity macro="struct_bt_alb_metal_works_macro" name="Metalworks Yard" />
+  <Entity macro="struct_bt_alb_small_ships_complex_macro" name="Civ Ship Parts Lot" />
+  <Entity macro="struct_bt_alb_small_ships_yard_macro" name="Civ Ship Dockyard" />
+  <Entity macro="struct_bt_alb_solar_power_plant_macro" name="Energy Array" />
+  <Entity macro="struct_bt_alb_spice_farm_macro" name="Spice Plantation" />
+  <Entity macro="struct_bt_alb_tech_complex_macro" name="Techno-Complex" />
+  <Entity macro="struct_bt_alb_water_destillery_macro" name="H2O Additives Fac" />
+  <Entity macro="struct_bt_alb_weaponry_complex_macro" name="Arms Tech Fab" />
+  <Entity macro="struct_bt_alb_weaponry_production_macro" name="Arms Tech Supply" />
+  <Entity macro="struct_bt_alb_wheat_farm_macro" name="Valley Plantation" />
+  <Entity macro="struct_bt_dv_canteran_outpost_01_macro" name="Habitation" />
+  <Entity macro="struct_bt_dv_canteran_outpost_02_macro" name="Habitation 02" />
+  <Entity macro="struct_bt_dv_canteran_outpost_03_macro" name="Habitation 03" />
+  <Entity macro="struct_bt_dv_drone_complex_macro" name="Integrative URV Forge" />
+  <Entity macro="struct_bt_dv_home_station_macro" name="Crystal Castle" />
+  <Entity macro="struct_bt_dv_reivers_outpost_01_macro" name="Way Station" />
+  <Entity macro="struct_bt_dv_reivers_outpost_02_macro" name="Way Station 02" />
+  <Entity macro="struct_bt_dv_reivers_outpost_03_macro" name="Way Station 03" />
+  <Entity macro="struct_bt_dv_shipyard_macro" name="BTO Ship Line" />
+  <Entity macro="struct_bt_dv_solar_power_plant_macro" name="Solar Energy Farm" />
+  <Entity macro="struct_bt_dv_water_destillery_macro" name="Water Distillery" />
+  <Entity macro="struct_bt_dv_wheat_farm_macro" name="Wheat Plantation" />
+  <Entity macro="struct_bt_ol_bofu_plant_macro" name="BoFu Star Complex" />
+  <Entity macro="struct_bt_ol_cell_refinery_macro" name="Mega Cellfab" />
+  <Entity macro="struct_bt_ol_construction_material_macro" name="Hardware Supplier" />
+  <Entity macro="struct_bt_ol_crystal_refinement_macro" name="Crystal Refinery" />
+  <Entity macro="struct_bt_ol_drone_complex_macro" name="URV Integration" />
+  <Entity macro="struct_bt_ol_drone_factory_macro" name="URV Mass Line" />
+  <Entity macro="struct_bt_ol_farm_complex_macro" name="Mega-Tank Farm" />
+  <Entity macro="struct_bt_ol_hightec_construction_macro" name="TechnoCore Parts" />
+  <Entity macro="struct_bt_ol_high_energy_construction_macro" name="TechnoCore Hi-E" />
+  <Entity macro="struct_bt_ol_laboratory_macro" name="R&amp;D Chem Lab" />
+  <Entity macro="struct_bt_ol_medical_supplies_macro" name="Pharma Lab" />
+  <Entity macro="struct_bt_ol_metalworks_macro" name="Metalframes Fab" />
+  <Entity macro="struct_bt_ol_plankton_tank_macro" name="Plankton Tankfarm" />
+  <Entity macro="struct_bt_ol_shipyard_macro" name="Large BTO Shipyard" />
+  <Entity macro="struct_bt_ol_small_ships_complex_macro" name="Mass Shipyard" />
+  <Entity macro="struct_bt_ol_small_ships_yard_macro" name="Retail Boatyard" />
+  <Entity macro="struct_bt_ol_solar_power_plant_macro" name="Solar Energy Array" />
+  <Entity macro="struct_bt_ol_soy_farm_macro" name="Soy Bean Farm" />
+  <Entity macro="struct_bt_ol_spacefuel_production_macro" name="Licensed Distillery" />
+  <Entity macro="struct_bt_ol_spice_farm_macro" name="Pharma-Spice Farm" />
+  <Entity macro="struct_bt_ol_tech_complex_macro" name="Technology Megacomplex" />
+  <Entity macro="struct_bt_ol_water_destillery_macro" name="Water Prep Plant" />
+  <Entity macro="struct_bt_ol_weaponrycomplex_macro" name="Mil Hi-Tech Dept" />
+  <Entity macro="struct_bt_ol_weaponryproduction_macro" name="Mil Hi-Tech Manuf" />
+  <Entity macro="struct_econ_agri_ar_pmc_coll_oxigen_a_macro" name="Farm Module S" />
+  <Entity macro="struct_econ_agri_ar_pmc_coll_water_a_macro" name="Farm Module S a" />
+  <Entity macro="struct_econ_agri_ar_pmc_oxigen_a_macro" name="struct_econ_agri_ar_pmc_oxigen_a_macro" />
+  <Entity macro="struct_econ_agri_ar_pmc_oxigen_b_macro" name="Farm Module S b" />
+  <Entity macro="struct_econ_agri_ar_pmc_oxigen_c_macro" name="Wheat Storage S" />
+  <Entity macro="struct_econ_agri_ar_pmc_oxigen_d_macro" name="Farm Module S d" />
+  <Entity macro="struct_econ_agri_ar_pmc_oxigen_e_macro" name="Farm Module S e" />
+  <Entity macro="struct_econ_agri_ar_pmc_oxigen_f_macro" name="Farm Module S f" />
+  <Entity macro="struct_econ_agri_ar_pmc_water_a_macro" name="Water Reservoir S" />
+  <Entity macro="struct_econ_agri_ar_unique_megafarmlands_macro" name="Sky Meadows" />
+  <Entity macro="struct_econ_cw_ar_water_a_macro" name="Xenon Module" />
+  <Entity macro="struct_econ_cw_ar_water_b_macro" name="Xenon Module b" />
+  <Entity macro="struct_econ_cw_ar_water_c_macro" name="Xenon Module c" />
+  <Entity macro="struct_econ_cw_ar_water_d_macro" name="Xenon Apparatus" />
+  <Entity macro="struct_econ_cw_ar_water_e_macro" name="Xenon Apparatus e" />
+  <Entity macro="struct_econ_cw_ar_water_f_macro" name="H2O Spheroid" />
+  <Entity macro="struct_econ_cw_ar_water_g_macro" name="Xenon Repository" />
+  <Entity macro="struct_econ_cw_ar_water_h_macro" name="Xenon Repository h" />
+  <Entity macro="struct_econ_cw_ar_water_i_macro" name="Xenon Apparatus i" />
+  <Entity macro="struct_econ_cw_ar_water_macro" name="Xenon Station" />
+  <Entity macro="struct_econ_cw_ar_water_old_destillery_a_macro" name="Xenon Module a" />
+  <Entity macro="struct_econ_cw_ar_water_old_destillery_c_macro" name="struct_econ_cw_ar_water_old_destillery_c_macro" />
+  <Entity macro="struct_econ_cw_generic_ar_water_L_macro" name="Xenon Station L" />
+  <Entity macro="struct_econ_cw_generic_ar_water_M_macro" name="Xenon Station M" />
+  <Entity macro="struct_econ_cw_generic_ar_water_XL_macro" name="Xenon Station XL" />
+  <Entity macro="struct_econ_mining_ar_generic_bridge_a_macro" name="Armoury Link" />
+  <Entity macro="struct_econ_mining_ar_generic_bridge_b_macro" name="Zoltek Bridge" />
+  <Entity macro="struct_econ_mining_ar_generic_bridge_c_macro" name="Armoury Bridge" />
+  <Entity macro="struct_econ_mining_ar_generic_solar_a_macro" name="E-Cell Fab a" />
+  <Entity macro="struct_econ_prod_al_meat_macro" name="Argnu Paradise meat" />
+  <Entity macro="struct_econ_prod_al_spices_macro" name="Spice Tubes spices" />
+  <Entity macro="struct_econ_prod_al_stor_bulk_organic_macro" name="Bulk Tube Stack" />
+  <Entity macro="struct_econ_prod_al_stor_energy_macro" name="Tesla Duo-Charger" />
+  <Entity macro="struct_econ_prod_al_stor_liquid_macro" name="Liquid Spheroid" />
+  <Entity macro="struct_econ_prod_antimattercells_macro" name="A/M Cyclotron antimattercells" />
+  <Entity macro="struct_econ_prod_antimattercells_ol_macro" name="A/M Cyclotron ol" />
+  <Entity macro="struct_econ_prod_bioelectricneurongel_macro" name="Gel Factory" />
+  <Entity macro="struct_econ_prod_bioopticwiring_macro" name="Bio-Optics Fac bioopticwiring" />
+  <Entity macro="struct_econ_prod_bofu_macro" name="BoFu Kitchen" />
+  <Entity macro="struct_econ_prod_chemicalcompounds_macro" name="Chem Refinery chemicalcompounds" />
+  <Entity macro="struct_econ_prod_chemicalcompounds_ol_macro" name="Chem Refinery ol" />
+  <Entity macro="struct_econ_prod_cutcrystals_macro" name="Crystal Cuttery cutcrystals" />
+  <Entity macro="struct_econ_prod_cutcrystals_ol_macro" name="Crystal Cuttery ol" />
+  <Entity macro="struct_econ_prod_drones_dv_macro" name="URV Wharf" />
+  <Entity macro="struct_econ_prod_drones_macro" name="URV Wharf drones" />
+  <Entity macro="struct_econ_prod_drones_ol_macro" name="URV Wharf ol" />
+  <Entity macro="struct_econ_prod_emspectrometer_macro" name="EM Fac Tower" />
+  <Entity macro="struct_econ_prod_energycells_macro" name="E-Cell Fab energycells" />
+  <Entity macro="struct_econ_prod_energycells_oa_macro" name="Solar Channel" />
+  <Entity macro="struct_econ_prod_energycells_ol_macro" name="Solar Converter" />
+  <Entity macro="struct_econ_prod_food_rations_macro" name="Foodstuff Fac rations" />
+  <Entity macro="struct_econ_prod_fuelcells_macro" name="Fuel Cell Mill fuelcells" />
+  <Entity macro="struct_econ_prod_fusion_reactor_macro" name="Fusion Core Fac reactor" />
+  <Entity macro="struct_econ_prod_fusion_reactor_ol_macro" name="Fusion Core Fac ol" />
+  <Entity macro="struct_econ_prod_hmg_macro" name="Podkletnov Fab hmg" />
+  <Entity macro="struct_econ_prod_hmg_ol_macro" name="Podkletnov Fab ol" />
+  <Entity macro="struct_econ_prod_ice_macro" name="Ice Refinery ice" />
+  <Entity macro="struct_econ_prod_ioncells_macro" name="Ion Cell Plant ioncells" />
+  <Entity macro="struct_econ_prod_ioncells_ol_macro" name="Ion Cell Plant ol" />
+  <Entity macro="struct_econ_prod_meat_macro" name="struct_econ_prod_meat_macro" />
+  <Entity macro="struct_econ_prod_medicalsupplies_macro" name="Pharma Platform medicalsupplies" />
+  <Entity macro="struct_econ_prod_microchips_macro" name="Chip Fab microchips" />
+  <Entity macro="struct_econ_prod_missiles_macro" name="Missile Forge" />
+  <Entity macro="struct_econ_prod_missiles_ol_macro" name="Missile Forge ol" />
+  <Entity macro="struct_econ_prod_narcotics_macro" name="Narcotics Lab narcotics" />
+  <Entity macro="struct_econ_prod_nividiumgems_macro" name="Cube Plant nividiumgems" />
+  <Entity macro="struct_econ_prod_nividiumgems_ol_macro" name="Cube Plant ol" />
+  <Entity macro="struct_econ_prod_pfr_macro" name="Plasma Tech pfr" />
+  <Entity macro="struct_econ_prod_pfr_ol_macro" name="Plasma Tech ol" />
+  <Entity macro="struct_econ_prod_plankt_macro" name="Plankton Tank" />
+  <Entity macro="struct_econ_prod_plasmacells_macro" name="Plasma Cyclotron plasmacells" />
+  <Entity macro="struct_econ_prod_plasmacells_ol_macro" name="Plasma Cyclotron ol" />
+  <Entity macro="struct_econ_prod_plasmapumps_macro" name="PPP Plant" />
+  <Entity macro="struct_econ_prod_quantumtubes_macro" name="QTube Y Fab quantumtubes" />
+  <Entity macro="struct_econ_prod_quantumtubes_ol_macro" name="QTube Y Fab ol" />
+  <Entity macro="struct_econ_prod_refinedmetals_macro" name="Steel Refinery refinedmetals" />
+  <Entity macro="struct_econ_prod_refinedmetals_ol_macro" name="Steel Refinery ol" />
+  <Entity macro="struct_econ_prod_reinforcedmetal_macro" name="Plate Foundry reinforcedmetal" />
+  <Entity macro="struct_econ_prod_reinforcedmetal_ol_macro" name="Plate Foundry ol" />
+  <Entity macro="struct_econ_prod_scaningarray_macro" name="ScannAr Facility scaningarray" />
+  <Entity macro="struct_econ_prod_shield_macro" name="Shield Facility" />
+  <Entity macro="struct_econ_prod_shield_ol_macro" name="Shield Facility ol" />
+  <Entity macro="struct_econ_prod_shipm_macro" name="Medium Shipyard" />
+  <Entity macro="struct_econ_prod_shipm_ol_macro" name="Medium Shipyard ol" />
+  <Entity macro="struct_econ_prod_siliconwavers_macro" name="Wafer Plant siliconwavers" />
+  <Entity macro="struct_econ_prod_siliconwavers_ol_macro" name="Wafer Plant ol" />
+  <Entity macro="struct_econ_prod_soy_macro" name="Soy Beanery" />
+  <Entity macro="struct_econ_prod_spacefuel_macro" name="Liquor Still spacefuel" />
+  <Entity macro="struct_econ_prod_spacefuel_ol_macro" name="Liquor Still ol" />
+  <Entity macro="struct_econ_prod_spaceweed_macro" name="Herb Garden spaceweed" />
+  <Entity macro="struct_econ_prod_spices_macro" name="struct_econ_prod_spices_macro" />
+  <Entity macro="struct_econ_prod_stor_container_macro" name="Container Storage container" />
+  <Entity macro="struct_econ_prod_turrets_macro" name="Turret Forge" />
+  <Entity macro="struct_econ_prod_turrets_ol_macro" name="Turret Forge ol" />
+  <Entity macro="struct_econ_prod_warheads_macro" name="Warhead Forge warheads" />
+  <Entity macro="struct_econ_prod_warheads_ol_macro" name="Warhead Forge ol" />
+  <Entity macro="struct_econ_prod_water_macro" name="Condenser Still water" />
+  <Entity macro="struct_econ_prod_water_ol_macro" name="Condenser Still ol" />
+  <Entity macro="struct_econ_prod_wheat_macro" name="struct_econ_prod_wheat_macro" />
+  <Entity macro="struct_econ_ref_ar_pmc_a_macro" name="Logistics Tracker" />
+  <Entity macro="struct_econ_ref_ar_pmc_basis_macro" name="Zoltek Reactor" />
+  <Entity macro="struct_econ_ref_ar_pmc_b_macro" name="Logistics Crew" />
+  <Entity macro="struct_econ_ref_ar_pmc_c_macro" name="Zoltek Control" />
+  <Entity macro="struct_econ_ref_ar_pmc_dronedock_macro" name="URV Launcher" />
+  <Entity macro="struct_econ_ref_ar_pmc_d_macro" name="Apartment Unit" />
+  <Entity macro="struct_econ_ref_ar_pmc_energy_storage_macro" name="Tesla Charger" />
+  <Entity macro="struct_econ_ref_ar_pmc_e_macro" name="Zoltek Extender" />
+  <Entity macro="struct_econ_ref_ar_pmc_f_macro" name="Logistics Bridge" />
+  <Entity macro="struct_econ_ref_ar_pmc_g_macro" name="Zoltek Storage" />
+  <Entity macro="struct_econ_ref_ar_pmc_h_macro" name="Zoltek Storage h" />
+  <Entity macro="struct_econ_ref_ar_pmc_i_macro" name="Apartment Suite" />
+  <Entity macro="struct_econ_ref_ar_pmc_j_macro" name="Logistics Dock" />
+  <Entity macro="struct_econ_ref_ar_pmc_k_macro" name="Bureau Security" />
+  <Entity macro="struct_econ_ref_ar_pmc_l_macro" name="Apartment Dock" />
+  <Entity macro="struct_econ_ref_ar_pmc_m_macro" name="Sensorium" />
+  <Entity macro="struct_econ_ref_ar_pmc_north_macro" name="Plutarch Exchange" />
+  <Entity macro="struct_econ_ref_ar_pmc_orbital_l_macro" name="Escape Velocity" />
+  <Entity macro="struct_econ_ref_ar_pmc_p_macro" name="Storage Bridge" />
+  <Entity macro="struct_econ_ref_ar_pmc_r_macro" name="Logistics Dock r" />
+  <Entity macro="struct_econ_ref_ar_pmc_u_macro" name="Command Relay" />
+  <Entity macro="struct_econ_science_addon_a_macro" name="Caliba Access" />
+  <Entity macro="struct_econ_science_addon_thin_a_macro" name="Caliba Supply" />
+  <Entity macro="struct_econ_science_fuelstation_d_macro" name="Caliba Reactor" />
+  <Entity macro="struct_econ_science_fuelstation_f_macro" name="Caliba Crew" />
+  <Entity macro="struct_econ_science_fuelstation_macro" name="Cell Recharge Fac fuelstation" />
+  <Entity macro="struct_econ_science_fuelstation_ring_macro" name="Spun Collider" />
+  <Entity macro="struct_econ_science_livingsection_a_macro" name="Science Crew Bunk" />
+  <Entity macro="struct_econ_science_livingsection_b_macro" name="Science Crew Unit" />
+  <Entity macro="struct_econ_science_livingsection_thin_a_macro" name="Science Crew Annex" />
+  <Entity macro="struct_econ_science_tower_a_macro" name="Bureau Central" />
+  <Entity macro="struct_econ_science_tower_b_macro" name="Bureau Suite" />
+  <Entity macro="struct_econ_science_tower_c_macro" name="Bureau Office" />
+  <Entity macro="struct_econ_science_tower_d_macro" name="Bureau Executive" />
+  <Entity macro="struct_econ_science_weaponplatform_macro" name="Targon Tracer" />
+  <Entity macro="struct_econ_shipy_livingsection_macro" name="Apartment Social" />
+  <Entity macro="struct_econ_special_canteran_ring_01_destroyed_macro" name="Terran Module" />
+  <Entity macro="struct_econ_special_canteran_ring_01_macro" name="Terran Processing" />
+  <Entity macro="struct_econ_special_canteran_ring_footbridge_02_destroyed_macro" name="Terran Module destroyed" />
+  <Entity macro="struct_econ_special_canteran_ring_footbridge_02_macro" name="Terran Module 02" />
+  <Entity macro="struct_econ_special_canteran_ring_footbridge_04_macro" name="Terran Module 04" />
+  <Entity macro="struct_econ_special_canteran_ring_footbridge_05_macro" name="Terran Depot" />
+  <Entity macro="struct_econ_special_canteran_ring_part_01_destroyed_macro" name="Administration" />
+  <Entity macro="struct_econ_special_canteran_ring_part_02_destroyed_macro" name="Life Staples" />
+  <Entity macro="struct_econ_special_canteran_ring_part_03_destroyed_macro" name="Storage Bay" />
+  <Entity macro="struct_econ_special_canteran_tower_01_destroyed_macro" name="Terran Processing destroyed" />
+  <Entity macro="struct_econ_special_reiver_outpost_01_macro" name="Recycling" />
+  <Entity macro="struct_econ_stor_energy_x1_macro" name="Tesla Charger x1" />
+  <Entity macro="struct_econ_stor_energy_x1_sy_macro" name="Tesla Charger sy" />
+  <Entity macro="struct_econ_stor_energy_x4_fs_macro" name="Filling Station" />
+  <Entity macro="struct_econ_stor_water_macro" name="Duo-Sphere" />
+  <Entity macro="struct_econ_unique_ar_spp_xl_macro" name="Solar Energetics" />
+  <Entity macro="struct_econ_weapon_ar_b_macro" name="Bureau Bridge" />
+  <Entity macro="struct_econ_weapon_ar_defence_macro" name="Plutarch Overwatch" />
+  <Entity macro="struct_econ_weapon_ar_j_macro" name="Defensive Phalanx" />
+  <Entity macro="struct_econ_weapon_ar_k_macro" name="Defensive Phalanx k" />
+  <Entity macro="struct_econ_weapon_ar_l_macro" name="Defensive Phalanx l" />
+  <Entity macro="turret_large_bb_macro" name="HIVI/MA Turret" />
+  <Entity macro="turret_large_bb_mk1_macro" name="Mining Turret" />
+  <Entity macro="turret_medium_lb_macro" name="Plasma/JET LR Turret lb" />
+  <Entity macro="turret_medium_ml_macro" name="Mining Turret ml" />
+  <Entity macro="turret_medium_ml_mk1_macro" name="Mining Turret mk1" />
+  <Entity macro="turret_medium_pe_macro" name="Plasma/MA Turret pe" />
+  <Entity macro="turret_medium_pe_mk1_macro" name="Jump Tunnel Device mk1" />
+  <Entity macro="turret_medium_sp_macro" name="Ragefire Turret" />
+  <Entity macro="turret_medium_xe_macro" name="Plasma/MA Turret xe" />
+  <Entity macro="turret_missile_df_macro" name="V Launcher df" />
+  <Entity macro="turret_missile_sm_macro" name="Astrobee Launcher sm" />
+  <Entity macro="turret_small_mg_macro" name="HIT/MA Turret mg" />
+  <Entity macro="turret_small_mg_mk1_macro" name="Directed Fusion Propulsion" />
+  <Entity macro="turret_small_mg_mk2_macro" name="Matter/Antimatter Drive mk2" />
+  <Entity macro="turret_small_mg_mk3_macro" name="JSDD Ramjet" />
+  <Entity macro="turret_small_sg_macro" name="Hailstorm/MA Turret sg" />
+  <Entity macro="turret_small_xe_macro" name="HIT/MA Turret xe" />
+  <Entity macro="units_size_drone_attackdrone_impulse_mk1_macro" name="Interceptor URV Mk1 mk1" />
+  <Entity macro="units_size_drone_attackdrone_impulse_mk2_macro" name="Interceptor URV Mk2 mk2" />
+  <Entity macro="units_size_drone_attackdrone_plasma_mk1_macro" name="Intrepid URV Mk1 mk1" />
+  <Entity macro="units_size_drone_attackdrone_plasma_mk2_macro" name="Intrepid URV Mk2 mk2" />
+  <Entity macro="units_size_drone_liquid_collector_mk1_macro" name="Scoop Collector URV Mk1 mk1" />
+  <Entity macro="units_size_drone_liquid_collector_mk2_macro" name="Scoop Collector URV Mk2 mk2" />
+  <Entity macro="units_size_drone_liquid_collector_mk3_macro" name="Scoop Collector URV Mk3" />
+  <Entity macro="units_size_drone_missiledrone_dumbfire_mk1_macro" name="Overrun URV Mk1 mk1" />
+  <Entity macro="units_size_drone_missiledrone_dumbfire_mk2_macro" name="Overrun URV Mk2 mk2" />
+  <Entity macro="units_size_drone_rubble_collector_mk1_macro" name="Surface Miner URV Mk1 mk1" />
+  <Entity macro="units_size_drone_rubble_collector_mk2_macro" name="Surface Miner URV Mk2 mk2" />
+  <Entity macro="units_size_drone_rubble_collector_mk3_macro" name="Surface Miner URV Mk3" />
+  <Entity macro="units_size_drone_swarm_light_defense_drone_mk1_macro" name="Shield Support URV mk1" />
+  <Entity macro="units_size_drone_swarm_light_defense_drone_mk2_macro" name="Shield Support URV mk2" />
+  <Entity macro="units_size_drone_swarm_shield_drone_macro" name="Defence Grid URV drone" />
+  <Entity macro="units_size_l_canteran_transporter_macro" name="Lepton" />
+  <Entity macro="units_size_l_carrier_01_macro" name="Carrier" />
+  <Entity macro="units_size_l_carrier_02_macro" name="Carrier 02" />
+  <Entity macro="units_size_l_crystal_collector_macro" name="units_size_l_crystal_collector_macro" />
+  <Entity macro="units_size_l_hydrogen_collector_macro" name="Boann" />
+  <Entity macro="units_size_l_ice_collector_macro" name="Sequana" />
+  <Entity macro="units_size_l_ions_collector_macro" name="Midir" />
+  <Entity macro="units_size_l_kit_bulk_01_macro" name="Rahanas (Bulk)" />
+  <Entity macro="units_size_l_kit_carrier_01_macro" name="Light Sul" />
+  <Entity macro="units_size_l_kit_carrier_02_macro" name="Heavy Sul" />
+  <Entity macro="units_size_l_kit_container_01_macro" name="Rahanas (Container)" />
+  <Entity macro="units_size_l_kit_container_02_macro" name="Rahanas (Container) 02" />
+  <Entity macro="units_size_l_kit_energy_01_macro" name="Rahanas (Energy)" />
+  <Entity macro="units_size_l_kit_hybrid_01_macro" name="Rahanas (Bulk &amp; Liquid)" />
+  <Entity macro="units_size_l_kit_hybrid_02_macro" name="Rahanas (Container &amp; Energy)" />
+  <Entity macro="units_size_l_kit_liquid_01_macro" name="Rahanas (Liquid)" />
+  <Entity macro="units_size_l_liquid_freighter_macro" name="Hermod" />
+  <Entity macro="units_size_l_nividium_collector_macro" name="units_size_l_nividium_collector_macro" />
+  <Entity macro="units_size_l_ore_collector_macro" name="Fedhelm" />
+  <Entity macro="units_size_l_plasma_collector_macro" name="Midir collector" />
+  <Entity macro="units_size_l_silicon_collector_macro" name="units_size_l_silicon_collector_macro" />
+  <Entity macro="units_size_l_single_attack_ship_macro" name="Balor" />
+  <Entity macro="units_size_l_xenon_01_macro" name="K" />
+  <Entity macro="units_size_m_canteran_01_macro" name="Katana" />
+  <Entity macro="units_size_m_canteran_02_macro" name="Daito" />
+  <Entity macro="units_size_m_container_transporter_5_macro" name="Gigurum (Container)" />
+  <Entity macro="units_size_m_crystal_collector_macro" name="Dwalin" />
+  <Entity macro="units_size_m_crystal_transporter_macro" name="Gigurum (Bulk)" />
+  <Entity macro="units_size_m_energy_transporter_macro" name="Gigurum (Energy)" />
+  <Entity macro="units_size_m_hydrogen_collector_macro" name="Nudung" />
+  <Entity macro="units_size_m_ice_collector_macro" name="Hymir" />
+  <Entity macro="units_size_m_ions_collector_macro" name="Betaver" />
+  <Entity macro="units_size_m_liquid_transporter_macro" name="Gigurum (Liquid)" />
+  <Entity macro="units_size_m_nividium_collector_macro" name="Dwalin collector" />
+  <Entity macro="units_size_m_ore_collector_macro" name="units_size_m_ore_collector_macro" />
+  <Entity macro="units_size_m_ore_transporter_macro" name="Gigurum Bulk transporter" />
+  <Entity macro="units_size_m_plasma_collector_macro" name="Betaver collector" />
+  <Entity macro="units_size_m_plasma_transporter_macro" name="Gigurum Energy transporter" />
+  <Entity macro="units_size_m_pmc_xen_02_macro" name="Golem" />
+  <Entity macro="units_size_m_silicon_collector_macro" name="units_size_m_silicon_collector_macro" />
+  <Entity macro="units_size_m_weapontech_transporter_macro" name="Gigurum Container transporter" />
+  <Entity macro="units_size_s_canteran_fighter_01_macro" name="Hayabusa" />
+  <Entity macro="units_size_s_pmc_xen_01_macro" name="Moebius" />
+  <Entity macro="units_size_s_ship_01_macro" name="Orlam" />
+  <Entity macro="units_size_s_ship_02_macro" name="Talorcan" />
+  <Entity macro="units_size_s_ship_03_macro" name="Ossian" />
+  <Entity macro="units_size_s_ship_04_macro" name="Artio" />
+  <Entity macro="units_size_s_ship_05_macro" name="Vasio" />
+  <Entity macro="units_size_s_ship_07_macro" name="Nechtan" />
+  <Entity macro="units_size_s_ship_19_macro" name="Hesus" />
+  <Entity macro="units_size_s_ship_23_macro" name="Birog" />
+  <Entity macro="units_size_s_ship_ar_military_01_macro" name="Camulos Raider" />
+  <Entity macro="units_size_s_ship_ar_military_02_macro" name="Camulos Vanguard" />
+  <Entity macro="units_size_s_ship_ar_military_03_macro" name="Camulos Sentinel" />
+  <Entity macro="units_size_s_ship_ar_military_04_macro" name="Foltor Raider" />
+  <Entity macro="units_size_s_ship_ar_military_05_macro" name="Foltor Vanguard" />
+  <Entity macro="units_size_s_ship_ar_military_06_macro" name="Foltor Sentinel" />
+  <Entity macro="units_size_s_ship_ar_military_07_macro" name="Eterscel Raider" />
+  <Entity macro="units_size_s_ship_ar_military_08_macro" name="Eterscel Vanguard" />
+  <Entity macro="units_size_s_ship_ar_military_09_macro" name="Eterscel Sentinel" />
+  <Entity macro="units_size_s_ship_pirate_01_macro" name="Domelch" />
+  <Entity macro="units_size_s_ship_pirate_02_macro" name="Cennelath" />
+  <Entity macro="units_size_s_ship_pirate_03_macro" name="Maelchon" />
+  <Entity macro="units_size_s_ship_pmc_01_macro" name="Triath Raider" />
+  <Entity macro="units_size_s_ship_pmc_02_macro" name="Triath Vanguard" />
+  <Entity macro="units_size_s_ship_pmc_03_macro" name="Triath Sentinel" />
+  <Entity macro="units_size_s_split_m3_macro" name="Bonescout" />
+  <Entity macro="units_size_s_split_m4_macro" name="Skull Crusher" />
+  <Entity macro="units_size_s_terran_m3_battered_macro" name="Daito battered" />
+  <Entity macro="units_size_s_terran_m3_macro" name="Katana m3" />
+  <Entity macro="units_size_s_torpedo_bomber_macro" name="Drostan" />
+  <Entity macro="units_size_s_xenon_swarm_attack_drone_01_macro" name="M" />
+  <Entity macro="units_size_s_xenon_swarm_attack_drone_02_macro" name="N" />
+  <Entity macro="units_size_xl_builder_ship_dv_macro" name="Construction Vessel" />
+  <Entity macro="units_size_xl_builder_ship_macro" name="Construction Vessel ship" />
+  <Entity macro="units_size_xl_builder_ship_ol_macro" name="Construction Vessel ol" />
+  <Entity macro="units_size_xl_builder_ship_plot_01_macro" name="Construction Vessel 01" />
+  <Entity macro="units_size_xl_capital_destroyer_1_macro" name="Arawn" />
+  <Entity macro="units_size_xl_capital_destroyer_2_macro" name="Taranis" />
+  <Entity macro="units_size_xl_cargo_hauler_2_macro" name="Titurel" />
+  <Entity macro="units_size_xl_cargo_hauler_3_macro" name="Scaldis" />
+  <Entity macro="units_size_xl_red_destroyer_macro" name="Sucellus" />
+  <Entity macro="units_size_xl_split_m1_macro" name="Gangrene Chaser" />
+  <Entity macro="units_size_xl_transporter_1_macro" name="Super-Freighter" />
+  <Entity macro="units_size_xl_transporter_2_macro" name="Super-Freighter 2" />
+  <Entity macro="units_size_xl_transporter_3_macro" name="Super-Freighter 3" />
+  <Entity macro="units_size_xs_albion_construction_macro" name="Maintenance &amp; Engineering Craft" />
+  <Entity macro="units_size_xs_albion_mining_macro" name="Maintenance &amp; Engineering Craft mining" />
+  <Entity macro="units_size_xs_albion_personal_transporter_macro" name="Bulk Carrier" />
+  <Entity macro="units_size_xs_albion_police_apc_macro" name="Traffic &amp; Riot Control Craft" />
+  <Entity macro="units_size_xs_albion_police_car_macro" name="Industrial Surveillance Craft" />
+  <Entity macro="units_size_xs_albion_police_transport_macro" name="Crew &amp; Equipment Carrier" />
+  <Entity macro="units_size_xs_albion_pv_1_blue_macro" name="Consumer Compact Craft" />
+  <Entity macro="units_size_xs_albion_pv_1_grey_macro" name="Consumer Compact Craft grey" />
+  <Entity macro="units_size_xs_albion_pv_1_red_macro" name="Consumer Compact Craft red" />
+  <Entity macro="units_size_xs_albion_pv_1_yellow_macro" name="Consumer Compact Craft yellow" />
+  <Entity macro="units_size_xs_albion_pv_2_blue_macro" name="Consumer Compact Craft blue" />
+  <Entity macro="units_size_xs_albion_pv_2_grey_macro" name="units_size_xs_albion_pv_2_grey_macro" />
+  <Entity macro="units_size_xs_albion_pv_2_red_macro" name="units_size_xs_albion_pv_2_red_macro" />
+  <Entity macro="units_size_xs_albion_pv_2_yellow_macro" name="units_size_xs_albion_pv_2_yellow_macro" />
+  <Entity macro="units_size_xs_albion_pv_3_blue_macro" name="units_size_xs_albion_pv_3_blue_macro" />
+  <Entity macro="units_size_xs_albion_pv_3_grey_macro" name="units_size_xs_albion_pv_3_grey_macro" />
+  <Entity macro="units_size_xs_albion_pv_3_red_macro" name="units_size_xs_albion_pv_3_red_macro" />
+  <Entity macro="units_size_xs_albion_pv_3_yellow_macro" name="units_size_xs_albion_pv_3_yellow_macro" />
+  <Entity macro="units_size_xs_albion_pv_4_blue_macro" name="units_size_xs_albion_pv_4_blue_macro" />
+  <Entity macro="units_size_xs_albion_pv_4_grey_macro" name="units_size_xs_albion_pv_4_grey_macro" />
+  <Entity macro="units_size_xs_albion_pv_4_red_macro" name="units_size_xs_albion_pv_4_red_macro" />
+  <Entity macro="units_size_xs_albion_pv_4_yellow_macro" name="units_size_xs_albion_pv_4_yellow_macro" />
+  <Entity macro="units_size_xs_albion_pv_5_blue_macro" name="units_size_xs_albion_pv_5_blue_macro" />
+  <Entity macro="units_size_xs_albion_pv_5_grey_macro" name="units_size_xs_albion_pv_5_grey_macro" />
+  <Entity macro="units_size_xs_albion_pv_5_red_macro" name="units_size_xs_albion_pv_5_red_macro" />
+  <Entity macro="units_size_xs_albion_pv_5_yellow_macro" name="units_size_xs_albion_pv_5_yellow_macro" />
+  <Entity macro="units_size_xs_albion_transport_1_macro" name="Bulk Carrier 1" />
+  <Entity macro="units_size_xs_albion_transport_2_macro" name="Bulk Carrier 2" />
+  <Entity macro="units_size_xs_boarding_ship_macro" name="Boarding Pod" />
+  <Entity macro="units_size_xs_devris_construction_macro" name="Maintenance &amp; Engineering Craft construction" />
+  <Entity macro="units_size_xs_devris_personal_transporter_macro" name="Bulk Carrier transporter" />
+  <Entity macro="units_size_xs_devris_police_apc_macro" name="Traffic &amp; Riot Control Craft apc" />
+  <Entity macro="units_size_xs_devris_police_car_macro" name="Industrial Surveillance Craft car" />
+  <Entity macro="units_size_xs_devris_police_transport_macro" name="Crew &amp; Equipment Carrier transport" />
+  <Entity macro="units_size_xs_devris_pv_01_brown_macro" name="Consumer Compact Craft brown" />
+  <Entity macro="units_size_xs_devris_pv_01_grey_macro" name="units_size_xs_devris_pv_01_grey_macro" />
+  <Entity macro="units_size_xs_devris_pv_01_red_macro" name="units_size_xs_devris_pv_01_red_macro" />
+  <Entity macro="units_size_xs_devris_pv_01_yellow_macro" name="units_size_xs_devris_pv_01_yellow_macro" />
+  <Entity macro="units_size_xs_devris_pv_02_brown_macro" name="units_size_xs_devris_pv_02_brown_macro" />
+  <Entity macro="units_size_xs_devris_pv_02_grey_macro" name="units_size_xs_devris_pv_02_grey_macro" />
+  <Entity macro="units_size_xs_devris_pv_02_red_macro" name="units_size_xs_devris_pv_02_red_macro" />
+  <Entity macro="units_size_xs_devris_pv_02_yellow_macro" name="units_size_xs_devris_pv_02_yellow_macro" />
+  <Entity macro="units_size_xs_devris_pv_03_brown_macro" name="units_size_xs_devris_pv_03_brown_macro" />
+  <Entity macro="units_size_xs_devris_pv_03_grey_macro" name="units_size_xs_devris_pv_03_grey_macro" />
+  <Entity macro="units_size_xs_devris_pv_03_red_macro" name="units_size_xs_devris_pv_03_red_macro" />
+  <Entity macro="units_size_xs_devris_pv_03_yellow_macro" name="units_size_xs_devris_pv_03_yellow_macro" />
+  <Entity macro="units_size_xs_devris_pv_04_brown_macro" name="units_size_xs_devris_pv_04_brown_macro" />
+  <Entity macro="units_size_xs_devris_pv_04_grey_macro" name="units_size_xs_devris_pv_04_grey_macro" />
+  <Entity macro="units_size_xs_devris_pv_04_red_macro" name="units_size_xs_devris_pv_04_red_macro" />
+  <Entity macro="units_size_xs_devris_pv_04_yellow_macro" name="units_size_xs_devris_pv_04_yellow_macro" />
+  <Entity macro="units_size_xs_devris_pv_05_brown_macro" name="units_size_xs_devris_pv_05_brown_macro" />
+  <Entity macro="units_size_xs_devris_pv_05_grey_macro" name="units_size_xs_devris_pv_05_grey_macro" />
+  <Entity macro="units_size_xs_devris_pv_05_red_macro" name="units_size_xs_devris_pv_05_red_macro" />
+  <Entity macro="units_size_xs_devris_pv_05_yellow_macro" name="units_size_xs_devris_pv_05_yellow_macro" />
+  <Entity macro="units_size_xs_devris_transport_01_macro" name="Bulk Carrier 01" />
+  <Entity macro="units_size_xs_devris_transport_02_macro" name="Bulk Carrier 02" />
+  <Entity macro="units_size_xs_omicron_police_apc_macro" name="units_size_xs_omicron_police_apc_macro" />
+  <Entity macro="units_size_xs_omicron_police_car_macro" name="units_size_xs_omicron_police_car_macro" />
+  <Entity macro="units_size_xs_omicron_police_transport_macro" name="units_size_xs_omicron_police_transport_macro" />
+  <Entity macro="units_size_xs_omicron_pv_1_blue_macro" name="units_size_xs_omicron_pv_1_blue_macro" />
+  <Entity macro="units_size_xs_omicron_pv_1_grey_macro" name="units_size_xs_omicron_pv_1_grey_macro" />
+  <Entity macro="units_size_xs_omicron_pv_1_red_macro" name="units_size_xs_omicron_pv_1_red_macro" />
+  <Entity macro="units_size_xs_omicron_pv_1_yellow_macro" name="units_size_xs_omicron_pv_1_yellow_macro" />
+  <Entity macro="units_size_xs_omicron_pv_2_blue_macro" name="units_size_xs_omicron_pv_2_blue_macro" />
+  <Entity macro="units_size_xs_omicron_pv_2_grey_macro" name="units_size_xs_omicron_pv_2_grey_macro" />
+  <Entity macro="units_size_xs_omicron_pv_2_red_macro" name="units_size_xs_omicron_pv_2_red_macro" />
+  <Entity macro="units_size_xs_omicron_pv_2_yellow_macro" name="units_size_xs_omicron_pv_2_yellow_macro" />
+  <Entity macro="units_size_xs_omicron_pv_3_blue_macro" name="units_size_xs_omicron_pv_3_blue_macro" />
+  <Entity macro="units_size_xs_omicron_pv_3_grey_macro" name="units_size_xs_omicron_pv_3_grey_macro" />
+  <Entity macro="units_size_xs_omicron_pv_3_red_macro" name="units_size_xs_omicron_pv_3_red_macro" />
+  <Entity macro="units_size_xs_omicron_pv_3_yellow_macro" name="units_size_xs_omicron_pv_3_yellow_macro" />
+  <Entity macro="units_size_xs_transp_empty_macro" name="Cargolifter URV empty" />
+  <Entity macro="units_size_xs_transp_energy_macro" name="Cargolifter URV energy" />
+  <Entity macro="units_size_xs_transp_food_macro" name="Cargolifter URV food" />
+  <Entity macro="units_size_xs_transp_generic_macro" name="Cargolifter URV generic" />
+  <Entity macro="units_size_xs_transp_liquid_macro" name="Cargolifter URV liquid" />
+  <Entity macro="units_size_xs_transp_pickup_macro" name="Cargolifter URV pickup" />
+  <Entity macro="units_size_xs_wardrone_macro" name="Assault URV wardrone" />
+  <Entity macro="units_size_xs_welder_drone_macro" name="Construction URV drone" />
+  <Entity macro="units_size_xs_xenon_drone_1_macro" name="TF/X Utility Craft" />
+  <Entity macro="units_size_xs_xenon_drone_2_macro" name="TF/X Utility Craft 2" />
+  <Entity macro="units_size_xs_xenon_drone_3_macro" name="TF/X Utility Craft 3" />
+  <Entity macro="units_size_xs_xenon_drone_4_macro" name="TF/X Utility Craft 4" />
+  <Entity macro="units_size_xs_xenon_drone_5_macro" name="TF/X Utility Craft 5" />
+  <Entity macro="unit_kit_deco_split_m1_broken_macro" name="Gangrene Chaser broken" />
+  <Entity macro="unit_player_demolition_drone_macro" name="Traitor ROV drone" />
+  <Entity macro="unit_player_hacker_drone_macro" name="Trojan ROV drone" />
+  <Entity macro="unit_player_interceptor_drone_macro" name="Assassin ROV drone" />
+  <Entity macro="unit_player_scanner_drone_mk1_macro" name="Beholder ROV Mk1 mk1" />
+  <Entity macro="unit_player_scanner_drone_mk2_macro" name="Beholder ROV Mk2 mk2" />
+  <Entity macro="unit_player_scanner_drone_mk3_macro" name="Beholder ROV Mk3 mk3" />
+  <Entity macro="unit_player_ship_macro" name="Albion Skunk" />
+  <Entity macro="unit_player_ship_scanner_1_macro" name="Basic Scanner 1" />
+  <Entity macro="unit_player_ship_scanner_2_macro" name="Advanced Scanner 2" />
+  <Entity macro="unit_player_ship_scanner_3_macro" name="Police Scanner 3" />
+  <Entity macro="unit_size_xs_escapepod_macro" name="Escape Pod" />
+  <Entity macro="viewer_sfx_dummyship_macro" name="Albion Skunk dummyship" />
+  <Entity macro="weapon_invisible_capital_mk1_macro" name="IHC Cannon" />
+  <Entity macro="weapon_invisible_impulse_mk1_macro" name="Pulsed Maser Mk1 mk1" />
+  <Entity macro="weapon_invisible_impulse_mk2_macro" name="Pulsed Maser Mk2 mk2" />
+  <Entity macro="weapon_invisible_mininglaser_mk1_macro" name="Mining Laser" />
+  <Entity macro="weapon_invisible_plasma_mk1_macro" name="Plasma Repeater Mk1 mk1" />
+  <Entity macro="weapon_invisible_plasma_mk2_macro" name="Plasma Repeater Mk2 mk2" />
+  <Entity macro="weapon_player_impulse_mk1_macro" name="weapon_player_impulse_mk1_macro" />
+  <Entity macro="weapon_player_impulse_mk2_macro" name="weapon_player_impulse_mk2_macro" />
+  <Entity macro="weapon_player_machinegun_mk1_macro" name="Particle Repeater Mk1 mk1" />
+  <Entity macro="weapon_player_machinegun_mk2_macro" name="Particle Repeater Mk2 mk2" />
+  <Entity macro="weapon_player_mining_mk1_macro" name="Mining Laser Mk1 mk1" />
+  <Entity macro="weapon_player_mining_mk2_macro" name="Mining Laser Mk2 mk2" />
+  <Entity macro="weapon_player_plasma_mk1_macro" name="Plasma Cannon Mk1 mk1" />
+  <Entity macro="weapon_player_plasma_mk2_macro" name="Plasma Cannon Mk2 mk2" />
+  <Entity macro="weapon_player_shotgun_mk1_macro" name="Inertial Hammer Mk1 mk1" />
+  <Entity macro="weapon_player_shotgun_mk2_macro" name="Inertial Hammer Mk2 mk2" />
+  <Entity macro="Highway01Sector01_macro" name="Highway01Sector01" />
+  <Entity macro="tzoneCluster_A_Sector01SHCon7_GateZone_macro" name="tzoneCluster_A_Sector01SHCon7_GateZone" />
+  <Entity name="Architect" macro="architect"/>
+
+  <Entity name="Commander" macro="commander"/>
+
+  <Entity name="Defence Officer" macro="defencecontrol"/>
+
+  <Entity name="Engineer" macro="engineer"/>
+
+  <Entity name="Manager" macro="manager"/>
+
+  <Entity name="Marine" macro="marine"/>
+
+  <Entity name="Pilot" macro="pilot"/>
+
+  <Entity name="Agricultural Engineer" macro="specialistagriculture"/>
+
+  <Entity name="Cell Specialist" macro="specialistpowerstorage"/>
+
+  <Entity name="Food Technologist" macro="specialistfood"/>
+
+  <Entity name="Chemical Specialist" macro="specialistchemical"/>
+
+  <Entity name="Precision Assembler" macro="specialistprecision"/>
+
+  <Entity name="Weapons Technologist" macro="specialistweapons"/>
+
+  <Entity name="Pharmaceutical Agent" macro="specialistpharmaceuticals"/>
+
+  <Entity name="Metallurgical Engineer" macro="specialistmetals"/>
+
+  <Entity name="Geophysicist" macro="specialistgeophysics"/>
+
+  <Entity name="Surface Technician" macro="specialistsurfacesystems"/>
+
+  <Entity name="Power Specialist" macro="specialistpowersupply"/>
+
+  <Entity name="Hydro Specialist" macro="specialistaquatics"/>
+</Entities>

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63B83C37-DA4F-4566-BFAF-D0E155DD3615}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XRebirthSaveEditorC</RootNamespace>
+    <AssemblyName>XRebirthSaveEditorC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>x_rebirth.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Component.cs" />
+    <Compile Include="CrewMember.cs" />
+    <Compile Include="Savegame.cs" />
+    <Compile Include="Ship.cs" />
+    <Compile Include="Shipyard.cs" />
+    <Compile Include="Station.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DateValueConverter.cs" />
+    <Compile Include="EntityValueConverter.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Resource Include="ComboBoxValues.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MacroTranslation.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\XL\Taranis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\XL\Arawn.jpg" />
+    <Resource Include="Images\XL\ConstructionVessel.jpg" />
+    <Resource Include="Images\XL\GangreneChaser.jpg" />
+    <Resource Include="Images\XL\Scaldis.jpg" />
+    <Resource Include="Images\PL\Skunk.jpg" />
+    <Resource Include="Images\XL\Sucellus.jpg" />
+    <Resource Include="Images\XL\SuperFreighter.jpg" />
+    <Resource Include="Images\XL\Titurel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\L\Balor.jpg" />
+    <Resource Include="Images\L\Boann.jpg" />
+    <Resource Include="Images\L\Fedhelm.jpg" />
+    <Resource Include="Images\L\HeavySul.jpg" />
+    <Resource Include="Images\L\Hermod.jpg" />
+    <Resource Include="Images\L\K.jpg" />
+    <Resource Include="Images\L\Lepton.jpg" />
+    <Resource Include="Images\L\LightSul.jpg" />
+    <Resource Include="Images\L\Midir.jpg" />
+    <Resource Include="Images\L\RahanasBulk.jpg" />
+    <Resource Include="Images\L\RahanasContainer.jpg" />
+    <Resource Include="Images\L\RahanasEnergy.jpg" />
+    <Resource Include="Images\L\RahanasLiquid.jpg" />
+    <Resource Include="Images\L\Sequana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\S\Artio.jpg" />
+    <Resource Include="Images\S\Birog.jpg" />
+    <Resource Include="Images\S\Bonescout.jpg" />
+    <Resource Include="Images\S\CamulosRaider.jpg" />
+    <Resource Include="Images\S\CamulosSentinel.jpg" />
+    <Resource Include="Images\S\CamulosVanguard.jpg" />
+    <Resource Include="Images\S\Cennelath.jpg" />
+    <Resource Include="Images\S\Domelch.jpg" />
+    <Resource Include="Images\S\Drostan.jpg" />
+    <Resource Include="Images\S\EterscelRaider.jpg" />
+    <Resource Include="Images\S\EterscelSentinel.jpg" />
+    <Resource Include="Images\S\EterscelVanguard.jpg" />
+    <Resource Include="Images\S\FoltorRaider.jpg" />
+    <Resource Include="Images\S\FoltorSentinel.jpg" />
+    <Resource Include="Images\S\FoltorVanguard.jpg" />
+    <Resource Include="Images\S\Hayabusa.jpg" />
+    <Resource Include="Images\S\Hesus.jpg" />
+    <Resource Include="Images\S\M.jpg" />
+    <Resource Include="Images\S\Maelchon.jpg" />
+    <Resource Include="Images\S\Moebius.jpg" />
+    <Resource Include="Images\S\N.jpg" />
+    <Resource Include="Images\S\Nechtan.jpg" />
+    <Resource Include="Images\S\Orlam.jpg" />
+    <Resource Include="Images\S\Ossian.jpg" />
+    <Resource Include="Images\S\SkullCrusher.jpg" />
+    <Resource Include="Images\S\Talorcan.jpg" />
+    <Resource Include="Images\S\TriathRaider.jpg" />
+    <Resource Include="Images\S\TriathSentinel.jpg" />
+    <Resource Include="Images\S\TriathVanguard.jpg" />
+    <Resource Include="Images\S\Vasio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\XS\AssaultURV.jpg" />
+    <Resource Include="Images\XS\BoardingPod.jpg" />
+    <Resource Include="Images\XS\BulkCarrier.jpg" />
+    <Resource Include="Images\XS\CargolifterURV.jpg" />
+    <Resource Include="Images\XS\ConstructionURV.jpg" />
+    <Resource Include="Images\XS\ConsumerCompactCraft.jpg" />
+    <Resource Include="Images\XS\CrewEquipmentCarrier.jpg" />
+    <Resource Include="Images\XS\EscapePod.jpg" />
+    <Resource Include="Images\XS\IndustrialSurveillanceCraft.jpg" />
+    <Resource Include="Images\XS\MaintenanceEngineeringCraft.jpg" />
+    <Resource Include="Images\XS\TFXUtilityCraft.jpg" />
+    <Resource Include="Images\XS\TrafficRiotControlCraft.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="x_rebirth.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
