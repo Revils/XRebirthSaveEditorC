@@ -378,6 +378,14 @@ namespace XRebirthSaveEditorC
                 repaired = true;
             }
 
+
+            IEnumerable<XElement> damagedHull = this.Data.Descendants().Elements("hull");
+            foreach (XElement hull in damagedHull)
+            {
+                hull.Remove();
+                repaired = true;
+            }
+
             if (repaired)
                 MessageBox.Show("Components Repaired");
         }
