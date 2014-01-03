@@ -81,10 +81,9 @@ namespace XRebirthSaveEditorC
             if (this.ShipBuildQueue.Contains(shipyardQueueShip))
             {
                 foreach (XElement ware in ConstructionWares)
-                {
-                    ware.Attribute("amount").Value = "0";
-                }
-                MessageBox.Show("Ship wares successfully transferred to shipyard");
+                    ware.SetAttributeValue("amount", "0");
+
+                MessageBox.Show("Required wares removed");
             }
         }
     }

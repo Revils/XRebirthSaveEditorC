@@ -1,7 +1,7 @@
 ﻿<Window x:Class="XRebirthSaveEditorC.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="XRebirthSaveEditorC v 0.5" Height="646" Width="1173" ResizeMode="CanResize" WindowStyle="SingleBorderWindow" Icon="/XRebirthSaveEditorC;component/x_rebirth.ico">
+        Title="XRebirthSaveEditorC v0.51" Height="646" Width="1173" ResizeMode="CanResize" WindowStyle="SingleBorderWindow" Icon="/XRebirthSaveEditorC;component/x_rebirth.ico">
     <Window.Resources>
         <Style x:Key="shipCargoTrigger" TargetType="{x:Type GroupBox}">
             <Style.Triggers>
@@ -212,8 +212,7 @@
         <DataTemplate x:Key="playerShipsItemTemplate">
             <StackPanel Orientation="Horizontal">
                 <Image Source="{Binding Path=Image}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" MaxWidth="160" MaxHeight="90"/>
-                <TextBlock Style="{StaticResource textBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Left" Text="{Binding Path=Data.Attribute[name].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
-
+                <TextBlock Style="{StaticResource textBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Left" Text="{Binding Path=Details}" />
             </StackPanel>
         </DataTemplate>
         <DataTemplate x:Key="playerStationsItemTemplate">
@@ -466,11 +465,11 @@
                                     </StackPanel>
                                     <StackPanel Orientation="Horizontal">
                                         <Label Style="{StaticResource labelStyle}">Class:</Label>
-                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Data.Attribute[class].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Data.Attribute[class].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" IsReadOnly="True" />
                                     </StackPanel>
                                     <StackPanel Orientation="Horizontal">
                                         <Label Style="{StaticResource labelStyle}">Macro:</Label>
-                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Data.Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                        <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Data.Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" IsReadOnly="True" />
                                     </StackPanel>
                                     <StackPanel Orientation="Horizontal">
                                         <Label Style="{StaticResource labelStyle}">State:</Label>
@@ -478,7 +477,8 @@
                                     </StackPanel>
 
                                     <Button Content="Delete Ship" Click="ButtonDeleteShip_Click" />
-                                    <Button Content="Repair all Components" Click="ButtonRepairShip_Click" />
+                                    <Button Content="Repair all Components" Click="ButtonRepairComponents_Click" />
+                                    <Button Content="Repair Hull" Height="Auto" Name="button2" Width="Auto" Click="ButtonRepairHull_Click" />
                                     <Button Content="Add Gravidar" Click="ButtonAddGravidarShip_Click" Style="{StaticResource buttonGravidarNothingTrigger}"/>
                                     <TextBlock Style="{StaticResource TextGravidarNothingTrigger}">(If a ship has no Gravidar, it cannot target enemy ships)</TextBlock>
 
@@ -1165,15 +1165,15 @@
 
                                 <StackPanel Orientation="Horizontal">
                                     <Label Style="{StaticResource labelStyle}">Class:</Label>
-                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[class].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[class].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" IsReadOnly="True" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <Label Style="{StaticResource labelStyle}">Macro:</Label>
-                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" />
+                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[macro].Value, FallbackValue='[not available]', Converter={StaticResource EntityValueConverter}}" IsReadOnly="True" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Label Style="{StaticResource labelStyle}">State:</Label>
-                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[state].Value, FallbackValue='[not available]'}" />
+                                    <Label Style="{StaticResource labelStyle}" Content="Owner:"></Label>
+                                    <TextBox Style="{StaticResource textboxStyle}" Text="{Binding Path=Attribute[owner].Value, FallbackValue='[not available]'}" IsReadOnly="True" />
                                 </StackPanel>
 
                             </StackPanel>

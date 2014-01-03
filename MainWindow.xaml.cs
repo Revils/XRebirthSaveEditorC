@@ -55,14 +55,14 @@ namespace XRebirthSaveEditorC
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.DefaultExt = "*.xml";
             openFileDialog.Filter = "eXtensible Markup Language file (.xml)|*.xml";
-            bool flag = (openFileDialog.ShowDialog() ?? false);
-            if (flag)
+            if (openFileDialog.ShowDialog() ?? false)
             {
                 this.saveXML = new Savegame(openFileDialog.FileName);
                 this.ParentGrid.DataContext = this.saveXML;
                 this.SaveMenuItem.IsEnabled = true;
                 this.ModMenuItem.IsEnabled = true;
                 this.MainTabControl.IsEnabled = true;
+                MainTabControl.SelectedIndex = 0;
             }
         }
 
@@ -70,9 +70,13 @@ namespace XRebirthSaveEditorC
         {
             this.saveXML.removeMod((XElement) this.ModListBox.SelectedItem);
         }
-        private void ButtonRepairShip_Click(object sender, RoutedEventArgs e)
+        private void ButtonRepairComponents_Click(object sender, RoutedEventArgs e)
         {
-            this.saveXML.repairShip((Ship) this.PlayerShipListBox.SelectedItem);
+            this.saveXML.repairComponents((Ship) this.PlayerShipListBox.SelectedItem);
+        }
+        private void ButtonRepairHull_Click(object sender, RoutedEventArgs e)
+        {
+            this.saveXML.repairHull((Ship) this.PlayerShipListBox.SelectedItem);
         }
         private void ButtonRemoveCargo_Click(object sender, RoutedEventArgs e)
         {

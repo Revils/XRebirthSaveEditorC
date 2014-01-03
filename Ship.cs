@@ -248,6 +248,16 @@ namespace XRebirthSaveEditorC
             }
 
             Gravidar = this.Data.Element("gravidar");
+
+            LoadDetails();
+        }
+
+        public void LoadDetails()
+        {
+            Details = String.Format("{0}\nId:{1}\nCrew #:{2}", this.Data.Attribute("name").Value, this.Data.Attribute("id").Value, Crew.Count);
+
+            if (this.Data.Element("hull") != null)
+                Details += "\nHull damaged";
         }
 
         public void removeCargo(XElement cargo)
@@ -353,23 +363,34 @@ namespace XRebirthSaveEditorC
             }
         }
 
-        public void repairShip()
+        public void repairComponents()
         {
             IEnumerable<XAttribute> damagedParts = this.Data.Descendants().Attributes("state").Where(delegate(XAttribute parts)
             {
-                bool result = false;
-                if (parts != null && (parts.Value.ToString().Contains("wrecked") | parts.Value.ToString().Contains("wreck")))
-                {
-                    result = true;
-                }
-                return result;
+                return (parts != null && (parts.Value.ToString().Contains("wrecked") || parts.Value.ToString().Contains("wreck")));
             }
             );
 
+            bool repaired = false;
             foreach (XAttribute part in damagedParts)
+            {
                 part.Remove();
+                repaired = true;
+            }
 
-            MessageBox.Show("Components Repaired");
+            if (repaired)
+                MessageBox.Show("Components Repaired");
+        }
+
+        public void repairHull()
+        {
+            XElement hull = this.Data.Element("hull");
+            if (hull != null)
+            {
+                hull.Remove();
+                LoadDetails();
+                MessageBox.Show("Hull Repaired");
+            }
         }
 
         public void addCrewAttributeNode(string attribute, CMember crewMember)

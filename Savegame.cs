@@ -100,7 +100,7 @@ namespace XRebirthSaveEditorC
             IEnumerable<XElement> shipyards = this._data.Descendants().Elements("component").Where(delegate(XElement shipyard)
             {
                 bool result = false;
-                if (shipyard.Attribute("macro") != null && shipyard.Attribute("macro").Value.ToString().Contains("shipyard"))
+                if (shipyard.Attribute("macro") != null && shipyard.Attribute("macro").Value.ToString().EndsWith("yard_macro"))
                 {
                     result = true;
                 }
@@ -119,18 +119,8 @@ namespace XRebirthSaveEditorC
                 {
                     result = true;
                 }
+
                 return result;
-                /*
-                }
-       
-                ).OrderBy(delegate(XElement ele)
-                {
-                    bool result = false;
-                    if (ele.Attribute("owner") != null && ele.Attribute("class") != null && (ele.Attribute("owner").Value.ToString() == "player") && ele.Attribute("class").Value.Contains("station"))
-                    {
-                        result = true;
-                    }
-                    return result;*/
             });
 
             foreach (XElement station in stations)
@@ -153,9 +143,14 @@ namespace XRebirthSaveEditorC
             }
         }
 
-        public void repairShip(Ship ship)
+        public void repairComponents(Ship ship)
         {
-            ship.repairShip();
+            ship.repairComponents();
+        }
+
+        public void repairHull(Ship ship)
+        {
+            ship.repairHull();
         }
 
         public void addCargo(Ship ship, string cargoType)
@@ -255,28 +250,6 @@ namespace XRebirthSaveEditorC
         public void finishShip(Shipyard shipyard, Ship ship)
         {
             shipyard.finishShip(ship);
-            this._playerShips = new ObservableCollection<Ship>();
-            IEnumerable<XElement> enumerable =
-                from element in this.Data.Descendants().Elements("component")
-                where (string) element.Attribute("owner") == "player" && (string) element.Attribute("state") != "wreck" && ((string) element.Attribute("class") == "ship_xl" | (string) element.Attribute("class") == "ship_l" | (string) element.Attribute("class") == "ship_s" | (string) element.Attribute("class") == "ship_xs")
-                select element;
-            try
-            {
-                IEnumerator<XElement> enumerator = enumerable.GetEnumerator();
-                while (enumerator.MoveNext())
-                {
-                    XElement current = enumerator.Current;
-                    this._playerShips.Add(new Ship(current));
-                }
-            }
-            finally
-            {
-                IEnumerator<XElement> enumerator = null;
-                if (enumerator != null)
-                {
-                    enumerator.Dispose();
-                }
-            }
         }
 
         public void deleteShip(Ship ship)

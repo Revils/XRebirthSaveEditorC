@@ -13,7 +13,7 @@ namespace XRebirthSaveEditorC
         private XElement _data;
         private string _image;
         public event PropertyChangedEventHandler PropertyChanged;
-
+        private string _details;
 
         protected void OnPropertyChanged(string propertyName)
         {
@@ -53,6 +53,19 @@ namespace XRebirthSaveEditorC
             {
                 this._image = value;
                 this.OnPropertyChanged("Image");
+            }
+        }
+
+        public string Details
+        {
+            get
+            {
+                return this._details;
+            }
+            set
+            {
+                this._details = value;
+                this.OnPropertyChanged("Details");
             }
         }
 
